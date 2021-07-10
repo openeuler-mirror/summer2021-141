@@ -1,7 +1,7 @@
 # Summer2021-No.141 openEuler社区体验地图的Web 3D小游戏开发
 
 #### 介绍
-https://gitee.com/openeuler-competition/summer-2021/issues/I3RJ5M
+https://gitee.com/openeuler-competition/summer-2021/issues/I3RJ5M  
 项目借助游戏帮助openEuler社区用户熟悉openEuler各项功能
 
 #### 软件架构
