@@ -2,10 +2,11 @@
 
 #### 介绍
 https://gitee.com/openeuler-competition/summer-2021/issues/I3RJ5M
+项目借助游戏帮助openEuler社区用户熟悉openEuler各项功能
 
 #### 软件架构
 软件架构说明
-
+本项目基于cocos creator开发
 
 #### 安装教程
 
