@@ -8,11 +8,11 @@ https://gitee.com/openeuler-competition/summer-2021/issues/I3RJ5M
 软件架构说明
 本项目基于cocos creator开发
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 开发阶段
+1.  跑酷
+2.  地图解密
+3.  社区ui养成
+4.  塔防
 
 #### 使用说明
 
