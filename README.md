@@ -10,9 +10,11 @@ https://gitee.com/openeuler-competition/summer-2021/issues/I3RJ5M
 
 #### 开发阶段
 1.  跑酷
+1.1  在Scene parkour中为跑酷阶段的场景，目前已完成人物控制，道具生成，路面循环，需配合需求进一步开发。
 2.  地图解密
 3.  社区ui养成
 4.  塔防
+5.  开始阶段的UI选择
 
 #### 使用说明
 
