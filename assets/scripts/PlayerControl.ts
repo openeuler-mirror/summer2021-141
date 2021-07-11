@@ -21,6 +21,10 @@ export class PlayerControl extends Component {
     })
     jumpTime = 0.3;
     @property({
+        type: CCFloat,
+    })
+    runSpeed = 1;
+    @property({
         type: SkeletalAnimation,
     })
     animator: SkeletalAnimation = null!;
@@ -33,6 +37,7 @@ export class PlayerControl extends Component {
     targetX = 0;
     jump = false;
     turn = false;
+    curentZ = 0;
     onLoad()
     {
         systemEvent.on(SystemEventType.TOUCH_START, this.onTouchStartEvent, this);
@@ -108,12 +113,14 @@ export class PlayerControl extends Component {
     }
     update(deltaTime: number)
     {
+        this.curentZ += this.runSpeed * deltaTime;
+        let pos = this.node.position.clone();
+        pos.z = this.curentZ;
         if (this.turn)
         {
-            let pos = this.node.position.clone();
             pos.x = math.lerp(pos.x, this.targetX, 1.8/this.fadeTime*deltaTime);
-            this.node.setPosition(pos);
         }
+        this.node.setPosition(pos);
     }
 }
 
