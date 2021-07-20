@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, NodePool, Prefab, instantiate, CCInteger, math, randomRangeInt } from 'cc';
+import { _decorator, Component, Node, NodePool, Prefab, instantiate, CCInteger, math, randomRangeInt, RichText } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
@@ -40,11 +40,16 @@ export class GameManager extends Component {
         { type: Node }
     )
     barRoot: Node = null!;
-
+    
+        
     playerCurentZ = 0;
     playerLastZ = 0;
     private _coinPool: NodePool = new NodePool();
     private _barPool: NodePool = new NodePool();
+    public coinPoolRestore(item: Node)
+    {
+        this._coinPool.put(item);
+    }
     start()
     {
         for (let i = 0; i < this.coinPoolNumber; ++i)
@@ -63,7 +68,16 @@ export class GameManager extends Component {
             if (coin != null)
             {
                 coin.parent = this.coinRoot;
-                coin.setPosition(new math.Vec3(randomRangeInt(-1, 1) * 1.5, 0.7, 5 * i));
+                coin.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 0.7, 5 * i));
+            }
+        }
+        for (let i = 0; i < this.barPoolNumber - 2; ++i)
+        {
+            let bar = this._barPool.get();
+            if (bar != null)
+            {
+                bar.parent = this.barRoot;
+                bar.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 0.7, 10 * i + 7.5));
             }
         }
     }
@@ -75,27 +89,47 @@ export class GameManager extends Component {
         if (this.playerCurentZ > 30)
         {
             this.playerCurentZ -= 30;
-            let childLenth = this.coinRoot.children.length;
+            let childCoinLenth = this.coinRoot.children.length;
             let tempZ = this.player.position.z;
-            let killNumber = 0;
-            for (let i = childLenth - 1; i >= 0; --i)
+            let killCoinNumber = 0;
+            for (let i = childCoinLenth - 1; i >= 0; --i)
             {
-                console.log("1." + this.coinRoot.children[i].position.z);
-                console.log("2." + tempZ);
+                //console.log("1." + this.coinRoot.children[i].position.z);
+                //console.log("2." + tempZ);
                 if (this.coinRoot.children[i].position.z < tempZ - 5)
                 {
                     this._coinPool.put(this.coinRoot.children[i]);
-                    killNumber++;
+                    killCoinNumber++;
                 }
             }
-            console.log(killNumber+"?");
-            for (let i = 0; i < killNumber; ++i)
+            console.log(killCoinNumber + "?");
+            killCoinNumber = killCoinNumber < 6 ? 6 : killCoinNumber;
+            for (let i = 0; i < killCoinNumber; ++i)
             {
                 let coin = this._coinPool.get();
                 if (coin != null)
                 {
                     coin.parent = this.coinRoot;
-                    coin.setPosition(new math.Vec3(randomRangeInt(-1, 1) * 1.5, 0.7, 25 + tempZ + 5 * i));
+                    coin.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 0.7, 25 + tempZ + 5 * i));
+                }
+            }
+            let childBarLenth = this.barRoot.children.length;
+            let killBarNumber = 0;
+            for (let i = childBarLenth - 1; i >= 0; --i)
+            {
+                if (this.barRoot.children[i].position.z < tempZ - 2)
+                {
+                    this._barPool.put(this.barRoot.children[i]);
+                    killBarNumber++;
+                }    
+            }
+            for (let i = 0; i < killBarNumber; ++i)
+            {
+                let bar = this._barPool.get();
+                if (bar != null)
+                {
+                    bar.parent = this.barRoot;
+                    bar.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 0.7, 25 + tempZ + 10 * i + 2.5));
                 }
             }
         }

@@ -1,7 +1,8 @@
 
-import { absMax, CCFloat, Event, RigidBody } from 'cc';
+import { absMax, CCFloat, Collider, director, Event, find, ITriggerEvent, RichText, RigidBody, Script } from 'cc';
 import { EventTouch, Touch, math} from 'cc';
 import { _decorator, Component, Node, SkeletalAnimation, CCLoader, systemEvent, SystemEventType } from 'cc';
+import { GameManager } from './GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerControl')
@@ -29,15 +30,32 @@ export class PlayerControl extends Component {
     })
     animator: SkeletalAnimation = null!;
 
+    @property({
+        type: GameManager
+    })
+    gameManager: GameManager = null!;
+    @property(
+        { type: RichText }
+    )
+    scoreText: RichText = null!;
+
+    @property(
+        { type: Node }
+    )
+    endPanel: Node = null!;
+
     rigidBody: RigidBody = null!;
 
+    
     touchX = 0;
     touchY = 0;
     curentX = 0;
     targetX = 0;
     jump = false;
+    slip = false;
     turn = false;
     curentZ = 0;
+    score = 0;
     onLoad()
     {
         systemEvent.on(SystemEventType.TOUCH_START, this.onTouchStartEvent, this);
@@ -47,6 +65,8 @@ export class PlayerControl extends Component {
     {
         this.animator.play("run");
         this.rigidBody = this.node.getComponent(RigidBody)!;
+        let collider = this.node.getComponent(Collider)!;
+        collider.on("onTriggerEnter", this.onTriggerEnter, this);
         // [3]
     }
     onDestroy()
@@ -81,8 +101,20 @@ export class PlayerControl extends Component {
                 this.jump = false;
                 this.animator.crossFade("run");
             }, this.jumpTime * 1200);
-            this.rigidBody.applyForce(new math.Vec3(0, 20000, 0));
-            console.log("Yes");
+            this.rigidBody.applyForce(new math.Vec3(0, 23000, 0));
+            console.log("jump");
+            return;
+        }
+        else if (Math.abs(difY) > Math.abs(difX) && difY > 30)
+        {
+            difX = 0;
+            this.slip = true;
+            this.animator.play("life");
+            setTimeout(() => {
+                this.slip = false;
+                this.animator.crossFade("run");
+            }, this.jumpTime * 1200);
+            console.log("slip");
             return;
         }
         //左右转向
@@ -111,6 +143,28 @@ export class PlayerControl extends Component {
             }, this.fadeTime * 1200);
         }
     }
+    onTriggerEnter(event: ITriggerEvent)
+    {
+        console.log(event.type, event);
+        let instance = event.otherCollider.node;
+        console.log(instance.name)
+        if (instance.name == "Coin")
+        {
+            this.gameManager.coinPoolRestore(instance);
+            this.score++;
+            this.scoreText.string = "得分:" + this.score;
+            return;
+        }
+        else if (instance.name == "bar")
+        {
+            this.endPanel.active = true;
+            director.pause();
+        }
+    }
+    public setEndPanelHide()
+    {
+        this.endPanel.active = false;
+    }
     update(deltaTime: number)
     {
         this.curentZ += this.runSpeed * deltaTime;
@@ -122,6 +176,7 @@ export class PlayerControl extends Component {
         }
         this.node.setPosition(pos);
     }
+    
 }
 
 /**
