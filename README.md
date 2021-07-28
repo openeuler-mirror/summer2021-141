@@ -12,7 +12,7 @@ https://gitee.com/openeuler-competition/summer-2021/issues/I3RJ5M
 1.  跑酷
 - 1. 在***Scene***<b>:parkour</b>中为跑酷阶段的场景，目前已完成人物控制，道具生成，路面循环，需配合需求进一步开发。
 2.  地图解密
-- 
+- 1. 在***Scene***<b>:puzzle</b>中为解密阶段的场景，初步定为2d场景切换解密
 3.  社区ui养成
 - 
 4.  塔防
