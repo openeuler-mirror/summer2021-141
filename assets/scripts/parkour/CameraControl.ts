@@ -1,34 +1,28 @@
 
-import { _decorator, Component, Node, director } from 'cc';
+import { _decorator, Component, Node } from 'cc';
 const { ccclass, property } = _decorator;
 
-@ccclass('GlobalFunction')
-export class GlobalFunction extends Component {
+@ccclass('Typescript')
+export class Typescript extends Component {
     // [1]
     // dummy = '';
 
-    // [2]
-    // @property
-    // serializableDummy = 0;
-
+    
+    @property(
+        { type: Node }
+    )
+    player!: Node;
     start () {
         // [3]
     }
-    public resumeGame()
+
+    update(deltaTime: number)
     {
-        director.resume();
+        let position = this.player.position.clone();
+        position.y = 5;
+        position.z -= 5;
+        this.node.setPosition(position);
     }
-    public sceneChangeFirst()
-    {
-        director.loadScene("parkour");
-    }
-    public sceneChangeStart()
-    {
-        director.loadScene("startUI");
-    }
-    // update (deltaTime: number) {
-    //     // [4]
-    // }
 }
 
 /**

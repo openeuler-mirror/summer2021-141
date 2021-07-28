@@ -1,9 +1,9 @@
 
-import { _decorator, Component, Node, director } from 'cc';
+import { _decorator, Component, Node, tween, math } from 'cc';
 const { ccclass, property } = _decorator;
 
-@ccclass('GlobalFunction')
-export class GlobalFunction extends Component {
+@ccclass('Introduce')
+export class Introduce extends Component {
     // [1]
     // dummy = '';
 
@@ -14,17 +14,11 @@ export class GlobalFunction extends Component {
     start () {
         // [3]
     }
-    public resumeGame()
+
+    public showIntroduce()
     {
-        director.resume();
-    }
-    public sceneChangeFirst()
-    {
-        director.loadScene("parkour");
-    }
-    public sceneChangeStart()
-    {
-        director.loadScene("startUI");
+        tween(this.node).by(1, { position: new math.Vec3(-400, 0) }).
+            by(5, { position: new math.Vec3(0, 0) }).by(1, { position: new math.Vec3(400, 0) }).start();
     }
     // update (deltaTime: number) {
     //     // [4]
