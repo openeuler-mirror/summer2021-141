@@ -22,6 +22,9 @@ export class StartSceneOption extends Component {
     {
         director.loadScene("parkour");
     }
+    public sceneChangeSecond() {
+        director.loadScene("puzzle");
+    }
 }
 
 /**

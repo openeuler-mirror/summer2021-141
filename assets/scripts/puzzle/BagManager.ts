@@ -1,28 +1,35 @@
 
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, Component, Node, Prefab, UI, Button } from 'cc';
 const { ccclass, property } = _decorator;
 
-@ccclass('Typescript')
-export class Typescript extends Component {
+@ccclass('BagManager')
+export class BagManager extends Component {
     // [1]
     // dummy = '';
 
-    
-    @property(
-        { type: Node }
-    )
-    player!: Node;
+    // [2]
+    // @property
+    // serializableDummy = 0;
+    @property({
+        type: Node,
+    })
+    layOut: Node = null!;
+    @property({
+        type: Prefab,
+    })
+    itemPrefab: Prefab = null!;
+    @property({
+        type: Button,
+    })
+    items: Button[] = null!;
+
     start () {
         // [3]
     }
 
-    update(deltaTime: number)
-    {
-        let position = this.player.position.clone();
-        position.y = 5;
-        position.z -= 5;
-        this.node.setPosition(position);
-    }
+    // update (deltaTime: number) {
+    //     // [4]
+    // }
 }
 
 /**

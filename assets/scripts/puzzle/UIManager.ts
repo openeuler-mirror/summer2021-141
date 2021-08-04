@@ -2,34 +2,52 @@
 import { _decorator, Component, Node, director } from 'cc';
 const { ccclass, property } = _decorator;
 
-@ccclass('GlobalFunction')
-export class GlobalFunction extends Component {
+@ccclass('UIManager')
+export class UIManager extends Component {
     // [1]
     // dummy = '';
 
     // [2]
     // @property
     // serializableDummy = 0;
+    @property({
+        type: Node,
+    })
+    bagBtn: Node = null!;
+    @property({
+        type: Node,
+    })
+    menuBtn: Node = null!;
+    @property({
+        type: Node,
+    })
+    bag: Node = null!;
+    @property({
+        type: Node,
+    })
+    menu: Node = null!;
+
+    public OpenBag() {
+        director.resume();
+        this.bag.active = true;
+    }
+    public OpenMenu() {
+        director.pause();
+        this.menu.active = true;
+    }
+    public CloseBag() {
+        director.resume();
+        this.bag.active = false;
+    }
+    public CloseMenu() {
+        director.resume();
+        this.menu.active = false;
+    }
 
     start () {
         // [3]
     }
-    public resumeGame()
-    {
-        director.resume();
-    }
-    public sceneChangeFirst()
-    {
-        director.loadScene("parkour");
-    }
-    public sceneChangeStart()
-    {
-        director.resume();
-        director.loadScene("startUI");
-    }
-    public sceneChangeSecond() {
-        director.loadScene("puzzle");
-    }
+
     // update (deltaTime: number) {
     //     // [4]
     // }

@@ -176,6 +176,7 @@ export class PlayerControl extends Component {
     }
     update(deltaTime: number)
     {
+        console.log(deltaTime);
         this.curentZ += this.runSpeed * deltaTime;
         let pos = this.node.position.clone();
         pos.z = this.curentZ;
