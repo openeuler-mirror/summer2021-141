@@ -1,0 +1,164 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "592b7f43-af6d-4e6a-920a-976877814cf5",
+  "files": [],
+  "subMetas": {
+    "72111": {
+      "importer": "gltf-mesh",
+      "uuid": "592b7f43-af6d-4e6a-920a-976877814cf5@72111",
+      "displayName": "",
+      "id": "72111",
+      "name": "云1_1_1.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a371a": {
+      "importer": "gltf-mesh",
+      "uuid": "592b7f43-af6d-4e6a-920a-976877814cf5@a371a",
+      "displayName": "",
+      "id": "a371a",
+      "name": "云1_1.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5d24e": {
+      "importer": "gltf-mesh",
+      "uuid": "592b7f43-af6d-4e6a-920a-976877814cf5@5d24e",
+      "displayName": "",
+      "id": "5d24e",
+      "name": "机身.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c66bf": {
+      "importer": "gltf-mesh",
+      "uuid": "592b7f43-af6d-4e6a-920a-976877814cf5@c66bf",
+      "displayName": "",
+      "id": "c66bf",
+      "name": "屏幕.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "407bc": {
+      "importer": "gltf-material",
+      "uuid": "592b7f43-af6d-4e6a-920a-976877814cf5@407bc",
+      "displayName": "",
+      "id": "407bc",
+      "name": "default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5050e": {
+      "importer": "gltf-material",
+      "uuid": "592b7f43-af6d-4e6a-920a-976877814cf5@5050e",
+      "displayName": "",
+      "id": "5050e",
+      "name": "材质.1_1.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9aeec": {
+      "importer": "gltf-material",
+      "uuid": "592b7f43-af6d-4e6a-920a-976877814cf5@9aeec",
+      "displayName": "",
+      "id": "9aeec",
+      "name": "材质.1.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5eae4": {
+      "importer": "gltf-scene",
+      "uuid": "592b7f43-af6d-4e6a-920a-976877814cf5@5eae4",
+      "displayName": "",
+      "id": "5eae4",
+      "name": "电视.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "592b7f43-af6d-4e6a-920a-976877814cf5@5eae4",
+    "assetFinder": {
+      "meshes": [
+        "592b7f43-af6d-4e6a-920a-976877814cf5@a371a",
+        "592b7f43-af6d-4e6a-920a-976877814cf5@72111",
+        "592b7f43-af6d-4e6a-920a-976877814cf5@5d24e",
+        "592b7f43-af6d-4e6a-920a-976877814cf5@c66bf"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "592b7f43-af6d-4e6a-920a-976877814cf5@407bc",
+        "592b7f43-af6d-4e6a-920a-976877814cf5@5050e",
+        "592b7f43-af6d-4e6a-920a-976877814cf5@9aeec"
+      ],
+      "scenes": [
+        "592b7f43-af6d-4e6a-920a-976877814cf5@5eae4"
+      ]
+    }
+  }
+}

@@ -20,7 +20,7 @@ export class Typescript extends Component {
     {
         let position = this.player.position.clone();
         position.y = 5;
-        position.z -= 5;
+        position.z -= 11.5;
         this.node.setPosition(position);
     }
 }

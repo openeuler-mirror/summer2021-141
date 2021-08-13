@@ -1,0 +1,165 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "cf5f4500-9552-4f5a-aa1b-134b0149bcea",
+  "files": [],
+  "subMetas": {
+    "019d9": {
+      "importer": "gltf-mesh",
+      "uuid": "cf5f4500-9552-4f5a-aa1b-134b0149bcea@019d9",
+      "displayName": "",
+      "id": "019d9",
+      "name": "仙人掌5_1_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "85ad8": {
+      "importer": "gltf-mesh",
+      "uuid": "cf5f4500-9552-4f5a-aa1b-134b0149bcea@85ad8",
+      "displayName": "",
+      "id": "85ad8",
+      "name": "仙人掌4_1_Material0.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "05c20": {
+      "importer": "gltf-mesh",
+      "uuid": "cf5f4500-9552-4f5a-aa1b-134b0149bcea@05c20",
+      "displayName": "",
+      "id": "05c20",
+      "name": "仙人掌3_1_Material0.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8ace6": {
+      "importer": "gltf-mesh",
+      "uuid": "cf5f4500-9552-4f5a-aa1b-134b0149bcea@8ace6",
+      "displayName": "",
+      "id": "8ace6",
+      "name": "仙人掌2_Material0.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3138e": {
+      "importer": "gltf-mesh",
+      "uuid": "cf5f4500-9552-4f5a-aa1b-134b0149bcea@3138e",
+      "displayName": "",
+      "id": "3138e",
+      "name": "仙人掌1_1_Material0.mesh",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9aeec": {
+      "importer": "gltf-material",
+      "uuid": "cf5f4500-9552-4f5a-aa1b-134b0149bcea@9aeec",
+      "displayName": "",
+      "id": "9aeec",
+      "name": "材质.1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "407bc": {
+      "importer": "gltf-material",
+      "uuid": "cf5f4500-9552-4f5a-aa1b-134b0149bcea@407bc",
+      "displayName": "",
+      "id": "407bc",
+      "name": "default.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "84dac": {
+      "importer": "gltf-scene",
+      "uuid": "cf5f4500-9552-4f5a-aa1b-134b0149bcea@84dac",
+      "displayName": "",
+      "id": "84dac",
+      "name": "仙人掌.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "cf5f4500-9552-4f5a-aa1b-134b0149bcea@84dac",
+    "assetFinder": {
+      "meshes": [
+        "cf5f4500-9552-4f5a-aa1b-134b0149bcea@019d9",
+        "cf5f4500-9552-4f5a-aa1b-134b0149bcea@85ad8",
+        "cf5f4500-9552-4f5a-aa1b-134b0149bcea@05c20",
+        "cf5f4500-9552-4f5a-aa1b-134b0149bcea@8ace6",
+        "cf5f4500-9552-4f5a-aa1b-134b0149bcea@3138e"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "cf5f4500-9552-4f5a-aa1b-134b0149bcea@9aeec",
+        "cf5f4500-9552-4f5a-aa1b-134b0149bcea@407bc"
+      ],
+      "scenes": [
+        "cf5f4500-9552-4f5a-aa1b-134b0149bcea@84dac"
+      ]
+    }
+  }
+}

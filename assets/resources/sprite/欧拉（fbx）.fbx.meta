@@ -1,0 +1,404 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e",
+  "files": [],
+  "subMetas": {
+    "1b488": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@1b488",
+      "displayName": "",
+      "id": "1b488",
+      "name": "头发.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "64a88": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@64a88",
+      "displayName": "",
+      "id": "64a88",
+      "name": "面部.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "76fac": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@76fac",
+      "displayName": "",
+      "id": "76fac",
+      "name": "胡子.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "594ff": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@594ff",
+      "displayName": "",
+      "id": "594ff",
+      "name": "衣领.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d6281": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@d6281",
+      "displayName": "",
+      "id": "d6281",
+      "name": "领带.mesh",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7e291": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@7e291",
+      "displayName": "",
+      "id": "7e291",
+      "name": "Default_1.mesh",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fd769": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@fd769",
+      "displayName": "",
+      "id": "fd769",
+      "name": "手.mesh",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ea73c": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@ea73c",
+      "displayName": "",
+      "id": "ea73c",
+      "name": "鞋子.mesh",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8857d": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@8857d",
+      "displayName": "",
+      "id": "8857d",
+      "name": "裤子.mesh",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "575e0": {
+      "importer": "gltf-mesh",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@575e0",
+      "displayName": "",
+      "id": "575e0",
+      "name": "大扣子.mesh",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8c550": {
+      "importer": "gltf-embeded-image",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@8c550",
+      "displayName": "",
+      "id": "8c550",
+      "name": "欧拉马术服.png.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d2fdf": {
+      "importer": "texture",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@d2fdf",
+      "displayName": "",
+      "id": "d2fdf",
+      "name": "欧拉马术服.png.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@8c550"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "301f0": {
+      "importer": "gltf-material",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@301f0",
+      "displayName": "",
+      "id": "301f0",
+      "name": "材质.1-0.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7d129": {
+      "importer": "gltf-material",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@7d129",
+      "displayName": "",
+      "id": "7d129",
+      "name": "材质.2-1.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c36c2": {
+      "importer": "gltf-material",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@c36c2",
+      "displayName": "",
+      "id": "c36c2",
+      "name": "材质.2-2.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0db21": {
+      "importer": "gltf-material",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@0db21",
+      "displayName": "",
+      "id": "0db21",
+      "name": "材质-3.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f0c2f": {
+      "importer": "gltf-material",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@f0c2f",
+      "displayName": "",
+      "id": "f0c2f",
+      "name": "材质.2-4.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5502a": {
+      "importer": "gltf-material",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@5502a",
+      "displayName": "",
+      "id": "5502a",
+      "name": "材质.2-5.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b748e": {
+      "importer": "gltf-material",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@b748e",
+      "displayName": "",
+      "id": "b748e",
+      "name": "材质.2-6.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "304e1": {
+      "importer": "gltf-material",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@304e1",
+      "displayName": "",
+      "id": "304e1",
+      "name": "材质.2-7.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5bf41": {
+      "importer": "gltf-scene",
+      "uuid": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@5bf41",
+      "displayName": "",
+      "id": "5bf41",
+      "name": "欧拉（fbx）.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "欧拉马术服.png",
+        "uri": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@8c550"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@5bf41",
+    "assetFinder": {
+      "meshes": [
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@1b488",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@64a88",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@76fac",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@594ff",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@d6281",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@7e291",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@fd769",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@ea73c",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@8857d",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@575e0"
+      ],
+      "skeletons": [],
+      "textures": [
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@d2fdf"
+      ],
+      "materials": [
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@301f0",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@7d129",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@c36c2",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@0db21",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@f0c2f",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@5502a",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@b748e",
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@304e1"
+      ],
+      "scenes": [
+        "3cb38f25-3f9f-4b80-8f13-627fdc14cd2e@5bf41"
+      ]
+    }
+  }
+}

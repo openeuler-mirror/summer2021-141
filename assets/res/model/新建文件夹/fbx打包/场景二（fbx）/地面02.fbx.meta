@@ -1,0 +1,168 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "6435d038-ba82-4b0d-8d6f-13f2694421a8",
+  "files": [],
+  "subMetas": {
+    "75204": {
+      "importer": "texture",
+      "uuid": "6435d038-ba82-4b0d-8d6f-13f2694421a8@75204",
+      "displayName": "",
+      "id": "75204",
+      "name": "地面02.png-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6435d038-ba82-4b0d-8d6f-13f2694421a8@6f5f3"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "87e21": {
+      "importer": "gltf-mesh",
+      "uuid": "6435d038-ba82-4b0d-8d6f-13f2694421a8@87e21",
+      "displayName": "",
+      "id": "87e21",
+      "name": "Default.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6f5f3": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6435d038-ba82-4b0d-8d6f-13f2694421a8@6f5f3",
+      "displayName": "",
+      "id": "6f5f3",
+      "name": "地面02.png-0.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6824e": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6435d038-ba82-4b0d-8d6f-13f2694421a8@6824e",
+      "displayName": "",
+      "id": "6824e",
+      "name": "地面02.png-1.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "56f26": {
+      "importer": "texture",
+      "uuid": "6435d038-ba82-4b0d-8d6f-13f2694421a8@56f26",
+      "displayName": "",
+      "id": "56f26",
+      "name": "地面02.png-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6435d038-ba82-4b0d-8d6f-13f2694421a8@6824e"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22e2a": {
+      "importer": "gltf-material",
+      "uuid": "6435d038-ba82-4b0d-8d6f-13f2694421a8@22e2a",
+      "displayName": "",
+      "id": "22e2a",
+      "name": "材质.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "94d6c": {
+      "importer": "gltf-scene",
+      "uuid": "6435d038-ba82-4b0d-8d6f-13f2694421a8@94d6c",
+      "displayName": "",
+      "id": "94d6c",
+      "name": "地面02.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "地面02.png",
+        "uri": "6435d038-ba82-4b0d-8d6f-13f2694421a8@6f5f3"
+      },
+      {
+        "name": "地面02.png",
+        "uri": "6435d038-ba82-4b0d-8d6f-13f2694421a8@6824e"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "6435d038-ba82-4b0d-8d6f-13f2694421a8@94d6c",
+    "assetFinder": {
+      "meshes": [
+        "6435d038-ba82-4b0d-8d6f-13f2694421a8@87e21"
+      ],
+      "skeletons": [],
+      "textures": [
+        "6435d038-ba82-4b0d-8d6f-13f2694421a8@75204",
+        "6435d038-ba82-4b0d-8d6f-13f2694421a8@56f26"
+      ],
+      "materials": [
+        "6435d038-ba82-4b0d-8d6f-13f2694421a8@22e2a"
+      ],
+      "scenes": [
+        "6435d038-ba82-4b0d-8d6f-13f2694421a8@94d6c"
+      ]
+    }
+  }
+}

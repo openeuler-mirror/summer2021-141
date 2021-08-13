@@ -1,0 +1,158 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824",
+  "files": [],
+  "subMetas": {
+    "1a9b7": {
+      "importer": "gltf-mesh",
+      "uuid": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@1a9b7",
+      "displayName": "",
+      "id": "1a9b7",
+      "name": "藤条.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cf8e8": {
+      "importer": "gltf-mesh",
+      "uuid": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@cf8e8",
+      "displayName": "",
+      "id": "cf8e8",
+      "name": "Default_Material1.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "26ae1": {
+      "importer": "gltf-embeded-image",
+      "uuid": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@26ae1",
+      "displayName": "",
+      "id": "26ae1",
+      "name": "WoodFine03_COL_VAR1_HIRES.jpg.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "96bef": {
+      "importer": "texture",
+      "uuid": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@96bef",
+      "displayName": "",
+      "id": "96bef",
+      "name": "WoodFine03_COL_VAR1_HIRES.jpg.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@26ae1"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4d449": {
+      "importer": "gltf-material",
+      "uuid": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@4d449",
+      "displayName": "",
+      "id": "4d449",
+      "name": "Archmodels61_001_leaf2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22e2a": {
+      "importer": "gltf-material",
+      "uuid": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@22e2a",
+      "displayName": "",
+      "id": "22e2a",
+      "name": "材质.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "84d50": {
+      "importer": "gltf-scene",
+      "uuid": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@84d50",
+      "displayName": "",
+      "id": "84d50",
+      "name": "木头01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "WoodFine03_COL_VAR1_HIRES.jpg",
+        "uri": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@26ae1"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@84d50",
+    "assetFinder": {
+      "meshes": [
+        "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@1a9b7",
+        "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@cf8e8"
+      ],
+      "skeletons": [],
+      "textures": [
+        "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@96bef"
+      ],
+      "materials": [
+        "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@4d449",
+        "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@22e2a"
+      ],
+      "scenes": [
+        "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@84d50"
+      ]
+    }
+  }
+}

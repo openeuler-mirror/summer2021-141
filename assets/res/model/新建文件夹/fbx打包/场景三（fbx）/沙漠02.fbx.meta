@@ -1,0 +1,168 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "cf37bf37-6755-41f7-9219-58b322151e04",
+  "files": [],
+  "subMetas": {
+    "87e21": {
+      "importer": "gltf-mesh",
+      "uuid": "cf37bf37-6755-41f7-9219-58b322151e04@87e21",
+      "displayName": "",
+      "id": "87e21",
+      "name": "Default.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3e4e5": {
+      "importer": "gltf-embeded-image",
+      "uuid": "cf37bf37-6755-41f7-9219-58b322151e04@3e4e5",
+      "displayName": "",
+      "id": "3e4e5",
+      "name": "沙漠02.png-0.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a47ac": {
+      "importer": "gltf-embeded-image",
+      "uuid": "cf37bf37-6755-41f7-9219-58b322151e04@a47ac",
+      "displayName": "",
+      "id": "a47ac",
+      "name": "沙漠02.png-1.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "da686": {
+      "importer": "texture",
+      "uuid": "cf37bf37-6755-41f7-9219-58b322151e04@da686",
+      "displayName": "",
+      "id": "da686",
+      "name": "沙漠02.png-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cf37bf37-6755-41f7-9219-58b322151e04@3e4e5"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c2de9": {
+      "importer": "texture",
+      "uuid": "cf37bf37-6755-41f7-9219-58b322151e04@c2de9",
+      "displayName": "",
+      "id": "c2de9",
+      "name": "沙漠02.png-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cf37bf37-6755-41f7-9219-58b322151e04@a47ac"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22e2a": {
+      "importer": "gltf-material",
+      "uuid": "cf37bf37-6755-41f7-9219-58b322151e04@22e2a",
+      "displayName": "",
+      "id": "22e2a",
+      "name": "材质.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4b9df": {
+      "importer": "gltf-scene",
+      "uuid": "cf37bf37-6755-41f7-9219-58b322151e04@4b9df",
+      "displayName": "",
+      "id": "4b9df",
+      "name": "沙漠02.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "沙漠02.png",
+        "uri": "cf37bf37-6755-41f7-9219-58b322151e04@3e4e5"
+      },
+      {
+        "name": "沙漠02.png",
+        "uri": "cf37bf37-6755-41f7-9219-58b322151e04@a47ac"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "cf37bf37-6755-41f7-9219-58b322151e04@4b9df",
+    "assetFinder": {
+      "meshes": [
+        "cf37bf37-6755-41f7-9219-58b322151e04@87e21"
+      ],
+      "skeletons": [],
+      "textures": [
+        "cf37bf37-6755-41f7-9219-58b322151e04@da686",
+        "cf37bf37-6755-41f7-9219-58b322151e04@c2de9"
+      ],
+      "materials": [
+        "cf37bf37-6755-41f7-9219-58b322151e04@22e2a"
+      ],
+      "scenes": [
+        "cf37bf37-6755-41f7-9219-58b322151e04@4b9df"
+      ]
+    }
+  }
+}

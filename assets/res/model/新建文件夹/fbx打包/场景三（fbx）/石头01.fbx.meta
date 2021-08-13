@@ -1,0 +1,76 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7e8a62fe-165d-4828-b053-a52dd35d1274",
+  "files": [],
+  "subMetas": {
+    "87e21": {
+      "importer": "gltf-mesh",
+      "uuid": "7e8a62fe-165d-4828-b053-a52dd35d1274@87e21",
+      "displayName": "",
+      "id": "87e21",
+      "name": "Default.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "407bc": {
+      "importer": "gltf-material",
+      "uuid": "7e8a62fe-165d-4828-b053-a52dd35d1274@407bc",
+      "displayName": "",
+      "id": "407bc",
+      "name": "default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0e849": {
+      "importer": "gltf-scene",
+      "uuid": "7e8a62fe-165d-4828-b053-a52dd35d1274@0e849",
+      "displayName": "",
+      "id": "0e849",
+      "name": "石头01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "7e8a62fe-165d-4828-b053-a52dd35d1274@0e849",
+    "assetFinder": {
+      "meshes": [
+        "7e8a62fe-165d-4828-b053-a52dd35d1274@87e21"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "7e8a62fe-165d-4828-b053-a52dd35d1274@407bc"
+      ],
+      "scenes": [
+        "7e8a62fe-165d-4828-b053-a52dd35d1274@0e849"
+      ]
+    }
+  }
+}

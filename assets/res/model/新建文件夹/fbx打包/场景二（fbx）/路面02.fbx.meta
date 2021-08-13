@@ -1,0 +1,123 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e779a3ce-699f-449c-b1f3-cdb18caf1b35",
+  "files": [],
+  "subMetas": {
+    "49061": {
+      "importer": "gltf-scene",
+      "uuid": "e779a3ce-699f-449c-b1f3-cdb18caf1b35@49061",
+      "displayName": "",
+      "id": "49061",
+      "name": "路面02.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "87e21": {
+      "importer": "gltf-mesh",
+      "uuid": "e779a3ce-699f-449c-b1f3-cdb18caf1b35@87e21",
+      "displayName": "",
+      "id": "87e21",
+      "name": "Default.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "459f8": {
+      "importer": "gltf-embeded-image",
+      "uuid": "e779a3ce-699f-449c-b1f3-cdb18caf1b35@459f8",
+      "displayName": "",
+      "id": "459f8",
+      "name": "路面02.png.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "dcd5a": {
+      "importer": "texture",
+      "uuid": "e779a3ce-699f-449c-b1f3-cdb18caf1b35@dcd5a",
+      "displayName": "",
+      "id": "dcd5a",
+      "name": "路面02.png.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "e779a3ce-699f-449c-b1f3-cdb18caf1b35@459f8"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22e2a": {
+      "importer": "gltf-material",
+      "uuid": "e779a3ce-699f-449c-b1f3-cdb18caf1b35@22e2a",
+      "displayName": "",
+      "id": "22e2a",
+      "name": "材质.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "路面02.png",
+        "uri": "e779a3ce-699f-449c-b1f3-cdb18caf1b35@459f8"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "e779a3ce-699f-449c-b1f3-cdb18caf1b35@49061",
+    "assetFinder": {
+      "meshes": [
+        "e779a3ce-699f-449c-b1f3-cdb18caf1b35@87e21"
+      ],
+      "skeletons": [],
+      "textures": [
+        "e779a3ce-699f-449c-b1f3-cdb18caf1b35@dcd5a"
+      ],
+      "materials": [
+        "e779a3ce-699f-449c-b1f3-cdb18caf1b35@22e2a"
+      ],
+      "scenes": [
+        "e779a3ce-699f-449c-b1f3-cdb18caf1b35@49061"
+      ]
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4",
+  "files": [],
+  "subMetas": {
+    "19295": {
+      "importer": "gltf-mesh",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@19295",
+      "displayName": "",
+      "id": "19295",
+      "name": "克隆.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ab47a": {
+      "importer": "gltf-mesh",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@ab47a",
+      "displayName": "",
+      "id": "ab47a",
+      "name": "圆环.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5c882": {
+      "importer": "gltf-mesh",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@5c882",
+      "displayName": "",
+      "id": "5c882",
+      "name": "圆环_1.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ad494": {
+      "importer": "gltf-mesh",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@ad494",
+      "displayName": "",
+      "id": "ad494",
+      "name": "树干.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "eca96": {
+      "importer": "gltf-mesh",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@eca96",
+      "displayName": "",
+      "id": "eca96",
+      "name": "树叶.mesh",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "384bf": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@384bf",
+      "displayName": "",
+      "id": "384bf",
+      "name": "WoodFine06_GLOSS_6K.jpg.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6cbbf": {
+      "importer": "texture",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@6cbbf",
+      "displayName": "",
+      "id": "6cbbf",
+      "name": "WoodFine06_GLOSS_6K.jpg.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@384bf"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3ecad": {
+      "importer": "gltf-material",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@3ecad",
+      "displayName": "",
+      "id": "3ecad",
+      "name": "材质.4.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b1bee": {
+      "importer": "gltf-material",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@b1bee",
+      "displayName": "",
+      "id": "b1bee",
+      "name": "材质.4_1.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9aeec": {
+      "importer": "gltf-material",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@9aeec",
+      "displayName": "",
+      "id": "9aeec",
+      "name": "材质.1.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bf7d6": {
+      "importer": "gltf-scene",
+      "uuid": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@bf7d6",
+      "displayName": "",
+      "id": "bf7d6",
+      "name": "树2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "WoodFine06_GLOSS_6K.jpg",
+        "uri": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@384bf"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@bf7d6",
+    "assetFinder": {
+      "meshes": [
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@ab47a",
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@5c882",
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@19295",
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@ad494",
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@eca96"
+      ],
+      "skeletons": [],
+      "textures": [
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@6cbbf"
+      ],
+      "materials": [
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@3ecad",
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@b1bee",
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@9aeec"
+      ],
+      "scenes": [
+        "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@bf7d6"
+      ]
+    }
+  }
+}

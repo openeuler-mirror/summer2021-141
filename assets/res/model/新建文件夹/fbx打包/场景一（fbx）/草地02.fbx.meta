@@ -1,0 +1,123 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "b3e59a41-554d-48b3-b59e-885198226761",
+  "files": [],
+  "subMetas": {
+    "87e21": {
+      "importer": "gltf-mesh",
+      "uuid": "b3e59a41-554d-48b3-b59e-885198226761@87e21",
+      "displayName": "",
+      "id": "87e21",
+      "name": "Default.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "67c4f": {
+      "importer": "gltf-embeded-image",
+      "uuid": "b3e59a41-554d-48b3-b59e-885198226761@67c4f",
+      "displayName": "",
+      "id": "67c4f",
+      "name": "草地02.png.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "47e1b": {
+      "importer": "texture",
+      "uuid": "b3e59a41-554d-48b3-b59e-885198226761@47e1b",
+      "displayName": "",
+      "id": "47e1b",
+      "name": "草地02.png.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "b3e59a41-554d-48b3-b59e-885198226761@67c4f"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22e2a": {
+      "importer": "gltf-material",
+      "uuid": "b3e59a41-554d-48b3-b59e-885198226761@22e2a",
+      "displayName": "",
+      "id": "22e2a",
+      "name": "材质.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "798e2": {
+      "importer": "gltf-scene",
+      "uuid": "b3e59a41-554d-48b3-b59e-885198226761@798e2",
+      "displayName": "",
+      "id": "798e2",
+      "name": "草地02.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "草地02.png",
+        "uri": "b3e59a41-554d-48b3-b59e-885198226761@67c4f"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "b3e59a41-554d-48b3-b59e-885198226761@798e2",
+    "assetFinder": {
+      "meshes": [
+        "b3e59a41-554d-48b3-b59e-885198226761@87e21"
+      ],
+      "skeletons": [],
+      "textures": [
+        "b3e59a41-554d-48b3-b59e-885198226761@47e1b"
+      ],
+      "materials": [
+        "b3e59a41-554d-48b3-b59e-885198226761@22e2a"
+      ],
+      "scenes": [
+        "b3e59a41-554d-48b3-b59e-885198226761@798e2"
+      ]
+    }
+  }
+}

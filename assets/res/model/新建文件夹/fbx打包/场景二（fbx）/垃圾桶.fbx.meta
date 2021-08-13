@@ -1,0 +1,112 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "ea377b23-7507-49a9-ba15-a290bfebcf64",
+  "files": [],
+  "subMetas": {
+    "98462": {
+      "importer": "gltf-mesh",
+      "uuid": "ea377b23-7507-49a9-ba15-a290bfebcf64@98462",
+      "displayName": "",
+      "id": "98462",
+      "name": "手柄.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8fa34": {
+      "importer": "gltf-mesh",
+      "uuid": "ea377b23-7507-49a9-ba15-a290bfebcf64@8fa34",
+      "displayName": "",
+      "id": "8fa34",
+      "name": "盖.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f32e4": {
+      "importer": "gltf-mesh",
+      "uuid": "ea377b23-7507-49a9-ba15-a290bfebcf64@f32e4",
+      "displayName": "",
+      "id": "f32e4",
+      "name": "圆柱.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "407bc": {
+      "importer": "gltf-material",
+      "uuid": "ea377b23-7507-49a9-ba15-a290bfebcf64@407bc",
+      "displayName": "",
+      "id": "407bc",
+      "name": "default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2d792": {
+      "importer": "gltf-scene",
+      "uuid": "ea377b23-7507-49a9-ba15-a290bfebcf64@2d792",
+      "displayName": "",
+      "id": "2d792",
+      "name": "垃圾桶.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "ea377b23-7507-49a9-ba15-a290bfebcf64@2d792",
+    "assetFinder": {
+      "meshes": [
+        "ea377b23-7507-49a9-ba15-a290bfebcf64@8fa34",
+        "ea377b23-7507-49a9-ba15-a290bfebcf64@98462",
+        "ea377b23-7507-49a9-ba15-a290bfebcf64@f32e4"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "ea377b23-7507-49a9-ba15-a290bfebcf64@407bc"
+      ],
+      "scenes": [
+        "ea377b23-7507-49a9-ba15-a290bfebcf64@2d792"
+      ]
+    }
+  }
+}

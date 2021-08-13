@@ -4,31 +4,42 @@
   "_objFlags": 0,
   "_native": "",
   "_effectAsset": {
-    "__uuid__": "1baf0fc9-befa-459c-8bdd-af1a450a0319"
+    "__uuid__": "1baf0fc9-befa-459c-8bdd-af1a450a0319",
+    "__expectedType__": "cc.EffectAsset"
   },
   "_techIdx": 0,
   "_defines": [
     {
       "USE_ALBEDO_MAP": true
-    }
+    },
+    {},
+    {},
+    {}
   ],
   "_states": [
     {
+      "rasterizerState": {},
+      "depthStencilState": {},
       "blendState": {
         "targets": [
           {}
         ]
-      },
-      "depthStencilState": {},
-      "rasterizerState": {}
-    }
+      }
+    },
+    {},
+    {},
+    {}
   ],
   "_props": [
     {
       "metallic": 0.5,
       "mainTexture": {
-        "__uuid__": "d71b4b9a-2e74-4095-a9ba-0c99072e03b9@6c48a"
+        "__uuid__": "d71b4b9a-2e74-4095-a9ba-0c99072e03b9@6c48a",
+        "__expectedType__": "cc.Texture2D"
       }
-    }
+    },
+    {},
+    {},
+    {}
   ]
 }

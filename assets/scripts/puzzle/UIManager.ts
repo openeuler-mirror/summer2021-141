@@ -43,7 +43,9 @@ export class UIManager extends Component {
         director.resume();
         this.menu.active = false;
     }
-
+    public SwitchScene(event: Event, custom: string) {
+        
+    }
     start () {
         // [3]
     }

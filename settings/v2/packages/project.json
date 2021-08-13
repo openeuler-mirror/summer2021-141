@@ -4,5 +4,14 @@
     "gravity": {
       "y": -40
     }
+  },
+  "layer": [],
+  "general": {
+    "renderPipeline": "fd8ec536-a354-4a17-9c74-4f3883c378c8",
+    "designResolution": {
+      "width": 2600,
+      "height": 5500,
+      "fitHeight": true
+    }
   }
 }

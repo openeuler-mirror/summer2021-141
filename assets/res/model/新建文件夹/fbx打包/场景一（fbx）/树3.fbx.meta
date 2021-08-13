@@ -1,0 +1,123 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "ddbdf74e-6445-4621-b5e7-ede552a51118",
+  "files": [],
+  "subMetas": {
+    "87e21": {
+      "importer": "gltf-mesh",
+      "uuid": "ddbdf74e-6445-4621-b5e7-ede552a51118@87e21",
+      "displayName": "",
+      "id": "87e21",
+      "name": "Default.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "df97f": {
+      "importer": "gltf-embeded-image",
+      "uuid": "ddbdf74e-6445-4621-b5e7-ede552a51118@df97f",
+      "displayName": "",
+      "id": "df97f",
+      "name": "树3.png.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "aadce": {
+      "importer": "texture",
+      "uuid": "ddbdf74e-6445-4621-b5e7-ede552a51118@aadce",
+      "displayName": "",
+      "id": "aadce",
+      "name": "树3.png.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "ddbdf74e-6445-4621-b5e7-ede552a51118@df97f"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22e2a": {
+      "importer": "gltf-material",
+      "uuid": "ddbdf74e-6445-4621-b5e7-ede552a51118@22e2a",
+      "displayName": "",
+      "id": "22e2a",
+      "name": "材质.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6f180": {
+      "importer": "gltf-scene",
+      "uuid": "ddbdf74e-6445-4621-b5e7-ede552a51118@6f180",
+      "displayName": "",
+      "id": "6f180",
+      "name": "树3.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "树3.png",
+        "uri": "ddbdf74e-6445-4621-b5e7-ede552a51118@df97f"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "ddbdf74e-6445-4621-b5e7-ede552a51118@6f180",
+    "assetFinder": {
+      "meshes": [
+        "ddbdf74e-6445-4621-b5e7-ede552a51118@87e21"
+      ],
+      "skeletons": [],
+      "textures": [
+        "ddbdf74e-6445-4621-b5e7-ede552a51118@aadce"
+      ],
+      "materials": [
+        "ddbdf74e-6445-4621-b5e7-ede552a51118@22e2a"
+      ],
+      "scenes": [
+        "ddbdf74e-6445-4621-b5e7-ede552a51118@6f180"
+      ]
+    }
+  }
+}

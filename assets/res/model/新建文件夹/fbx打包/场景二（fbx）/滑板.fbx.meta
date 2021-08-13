@@ -1,0 +1,164 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9",
+  "files": [],
+  "subMetas": {
+    "250d3": {
+      "importer": "gltf-mesh",
+      "uuid": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@250d3",
+      "displayName": "",
+      "id": "250d3",
+      "name": "轮子.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7a229": {
+      "importer": "gltf-mesh",
+      "uuid": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@7a229",
+      "displayName": "",
+      "id": "7a229",
+      "name": "滑板.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b690e": {
+      "importer": "gltf-mesh",
+      "uuid": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@b690e",
+      "displayName": "",
+      "id": "b690e",
+      "name": "group31_group30_polySurface59.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c634a": {
+      "importer": "gltf-mesh",
+      "uuid": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@c634a",
+      "displayName": "",
+      "id": "c634a",
+      "name": "group31_group30_pPlane8.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7c465": {
+      "importer": "gltf-material",
+      "uuid": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@7c465",
+      "displayName": "",
+      "id": "7c465",
+      "name": "lambert3SG.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0bf5c": {
+      "importer": "gltf-material",
+      "uuid": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@0bf5c",
+      "displayName": "",
+      "id": "0bf5c",
+      "name": "pasted__lambert14_1.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cb064": {
+      "importer": "gltf-material",
+      "uuid": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@cb064",
+      "displayName": "",
+      "id": "cb064",
+      "name": "pasted__lambert16.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c5c42": {
+      "importer": "gltf-scene",
+      "uuid": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@c5c42",
+      "displayName": "",
+      "id": "c5c42",
+      "name": "滑板.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@c5c42",
+    "assetFinder": {
+      "meshes": [
+        "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@250d3",
+        "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@7a229",
+        "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@b690e",
+        "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@c634a"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@7c465",
+        "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@0bf5c",
+        "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@cb064"
+      ],
+      "scenes": [
+        "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@c5c42"
+      ]
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7",
+  "files": [],
+  "subMetas": {
+    "92127": {
+      "importer": "gltf-scene",
+      "uuid": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@92127",
+      "displayName": "",
+      "id": "92127",
+      "name": "木头02.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1a9b7": {
+      "importer": "gltf-mesh",
+      "uuid": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@1a9b7",
+      "displayName": "",
+      "id": "1a9b7",
+      "name": "藤条.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "87e21": {
+      "importer": "gltf-mesh",
+      "uuid": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@87e21",
+      "displayName": "",
+      "id": "87e21",
+      "name": "Default.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4c5e0": {
+      "importer": "gltf-embeded-image",
+      "uuid": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@4c5e0",
+      "displayName": "",
+      "id": "4c5e0",
+      "name": "木头.png.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "03ba8": {
+      "importer": "texture",
+      "uuid": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@03ba8",
+      "displayName": "",
+      "id": "03ba8",
+      "name": "木头.png.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@4c5e0"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4d449": {
+      "importer": "gltf-material",
+      "uuid": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@4d449",
+      "displayName": "",
+      "id": "4d449",
+      "name": "Archmodels61_001_leaf2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22e2a": {
+      "importer": "gltf-material",
+      "uuid": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@22e2a",
+      "displayName": "",
+      "id": "22e2a",
+      "name": "材质.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "木头.png",
+        "uri": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@4c5e0"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@92127",
+    "assetFinder": {
+      "meshes": [
+        "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@1a9b7",
+        "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@87e21"
+      ],
+      "skeletons": [],
+      "textures": [
+        "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@03ba8"
+      ],
+      "materials": [
+        "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@4d449",
+        "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@22e2a"
+      ],
+      "scenes": [
+        "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@92127"
+      ]
+    }
+  }
+}

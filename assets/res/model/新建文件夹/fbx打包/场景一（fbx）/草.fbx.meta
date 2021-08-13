@@ -1,0 +1,58 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "92baa543-3fc0-480c-8bf6-57e59d93b54b",
+  "files": [],
+  "subMetas": {
+    "8974b": {
+      "importer": "gltf-mesh",
+      "uuid": "92baa543-3fc0-480c-8bf6-57e59d93b54b@8974b",
+      "displayName": "",
+      "id": "8974b",
+      "name": "Archmodels61_001_01.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3db51": {
+      "importer": "gltf-scene",
+      "uuid": "92baa543-3fc0-480c-8bf6-57e59d93b54b@3db51",
+      "displayName": "",
+      "id": "3db51",
+      "name": "草.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "92baa543-3fc0-480c-8bf6-57e59d93b54b@3db51",
+    "assetFinder": {
+      "meshes": [
+        "92baa543-3fc0-480c-8bf6-57e59d93b54b@8974b"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "92baa543-3fc0-480c-8bf6-57e59d93b54b@3db51"
+      ]
+    }
+  }
+}
