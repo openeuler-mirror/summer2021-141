@@ -3,6 +3,7 @@
 #### 介绍
 https://gitee.com/openeuler-competition/summer-2021/issues/I3RJ5M  
 项目借助游戏帮助openEuler社区用户熟悉openEuler各项功能
+您可以在网页中输入 210.22.22.150:4587 体验初步版本
 
 #### 软件架构
 软件架构说明
