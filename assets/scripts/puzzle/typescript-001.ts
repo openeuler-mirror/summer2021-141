@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, Canvas, view, macro, find, UITransform, tween } from 'cc';
+import { _decorator, Component, Node, Canvas, view, macro, find, UITransform, tween, Event } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('Typescript001')
@@ -12,6 +12,10 @@ export class Typescript001 extends Component {
         type: Node
     })
     n2: Node = null!;
+
+    aaa = 0;
+    sss = false;
+
     public A() {
         let framesize = view.getFrameSize();
         let node = find("Canvas");
@@ -34,16 +38,31 @@ export class Typescript001 extends Component {
             .to(1, this.n2.position)
             .start();
     }
+    public C() {
+        this.sss = true;
+        console.log(this.aaa);
+    }
+    public D() {
+        this.sss = false;
+        return;
+    }
+    public E() {
+        console.log("00000000");
+    }
     onLoad() {
-        this.A();
+        // this.A();
+       // this.node.on(Node.EventType.TOUCH_START, this.C, this)
+      //  this.node.on(Node.EventType.TOUCH_END, this.D, this)
     }
     start() {
 
     }
 
-    // update (deltaTime: number) {
-    //     // [4]
-    // }
+     update (deltaTime: number) {
+         if (this.sss)
+             this.aaa++;
+         
+     }
 }
 
 /**

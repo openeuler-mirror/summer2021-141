@@ -172,7 +172,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "c6ab6143-05de-418b-b4bd-665a062ba0d2@407bc",
+        "__uuid__": "edb6664d-6fcc-4405-8e67-763a2450ba77@407bc",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -181,7 +181,7 @@
       "__id__": 7
     },
     "_mesh": {
-      "__uuid__": "c6ab6143-05de-418b-b4bd-665a062ba0d2@87e21",
+      "__uuid__": "edb6664d-6fcc-4405-8e67-763a2450ba77@87e21",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,

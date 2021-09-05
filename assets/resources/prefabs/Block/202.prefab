@@ -229,7 +229,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "1cd99403-e7b4-43b1-9513-747aee42ad30@3ecad",
+        "__uuid__": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@3ecad",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -238,7 +238,7 @@
       "__id__": 8
     },
     "_mesh": {
-      "__uuid__": "1cd99403-e7b4-43b1-9513-747aee42ad30@ab47a",
+      "__uuid__": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@ab47a",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,
@@ -334,7 +334,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "1cd99403-e7b4-43b1-9513-747aee42ad30@3ecad",
+        "__uuid__": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@3ecad",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -343,7 +343,7 @@
       "__id__": 13
     },
     "_mesh": {
-      "__uuid__": "1cd99403-e7b4-43b1-9513-747aee42ad30@5c882",
+      "__uuid__": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@5c882",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,
@@ -439,7 +439,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "1cd99403-e7b4-43b1-9513-747aee42ad30@b1bee",
+        "__uuid__": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@b1bee",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -448,7 +448,7 @@
       "__id__": 18
     },
     "_mesh": {
-      "__uuid__": "1cd99403-e7b4-43b1-9513-747aee42ad30@19295",
+      "__uuid__": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@19295",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,
@@ -544,7 +544,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "1cd99403-e7b4-43b1-9513-747aee42ad30@9aeec",
+        "__uuid__": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@9aeec",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -553,7 +553,7 @@
       "__id__": 23
     },
     "_mesh": {
-      "__uuid__": "1cd99403-e7b4-43b1-9513-747aee42ad30@ad494",
+      "__uuid__": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@ad494",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,
@@ -658,7 +658,7 @@
       "__id__": 28
     },
     "_mesh": {
-      "__uuid__": "1cd99403-e7b4-43b1-9513-747aee42ad30@eca96",
+      "__uuid__": "6f84f929-9e7f-4ce9-be5a-31d96e4642a4@eca96",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,

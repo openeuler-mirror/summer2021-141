@@ -1,68 +1,69 @@
 
 import { _decorator, Component, Node, CCBoolean, CCInteger, math, labelAssembler, Label } from 'cc';
+import { BagManager } from './BagManager';
+import { UIManager } from './UIManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('ItemStatus')
 export class ItemStatus extends Component {
-    // [1]
-    // dummy = '';
-
-    // [2]
-    // @property
-    // serializableDummy = 0;
     @property({
-        type: Node,
+        type: UIManager
     })
-    bagLayOut: Node = null!;
-
-    @property(
-        { type: Node }
-    )
-    player: Node = null!;
-
-    @property(
-        { type: Node }
-    )
-    info: Node = null!;
-    @property(
-        { type: Label }
-    )
-    infoc: Label = null!;
-    @property(
-        { type: Node }
-    )
-    message: Node = null!;
+    public uiManager: UIManager = null!;
     @property({
-        type: CCInteger,
+        type: Boolean
     })
-    useTimes: number = 0;
+    public isInBag = false;
+    @property({
+        type: Boolean
+    })
+    public canSyn = false;
+    @property({
+        type: Boolean
+    })
+    public isSelect = false;
+    @property({
+        type: CCInteger
+    })
+    public synCode = -1;
 
-    isPicked: boolean = false;
+    public time = 0.5;
+    public isStartTime = false;
+    public isLong = false;
 
-    public PickUp() {
-        if (!this.isPicked) {
-            let s = Math.sqrt((this.player.position.x - this.node.position.x) ^ 2 + (this.player.position.y - this.node.position.y) ^ 2);
-            console.log(this.isPicked);
-            if (s <= 5) {
-                this.node.parent = this.bagLayOut;
-                this.isPicked = true;
-            }
-            else {
-                this.info.active = !this.info.active;
-            }
-        }
-        else {
-            let temp = this.message.getComponent(Label);
-            if (temp != null) temp.string = this.infoc.string;
+    public TouchStart() {
+        if (this.isInBag) {
+            this.isStartTime = true;
+            this.isLong = false;
         }
     }
+    public TouchEnd() {
+        if (this.isInBag) {
+            this.isStartTime = false;
+            if (!this.isLong) {
+                this.time = 0.5;
+            }
+            console.log(this.node.name+"long:" + this.isLong);
+        }
+    }
+
+    onLoad() {
+        this.node.on(Node.EventType.TOUCH_START, this.TouchStart, this);
+        this.node.on(Node.EventType.TOUCH_END, this.TouchEnd, this);
+    }
+
     start () {
         // [3]
     }
 
-    // update (deltaTime: number) {
-    //     // [4]
-    // }
+    update(deltaTime: number) {
+        if (this.isStartTime) {
+            this.time -= deltaTime;
+            if (this.time <= 0) {
+                this.isLong = true;
+            }
+        }
+     }
 }
 
 /**

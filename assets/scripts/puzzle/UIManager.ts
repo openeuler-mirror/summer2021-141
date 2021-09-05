@@ -1,50 +1,63 @@
 
-import { _decorator, Component, Node, director } from 'cc';
+import { _decorator, Component, Node, Canvas, view, macro, find, UITransform, director, Event, Label } from 'cc';
+import { Fade } from './Fade'
+import { BagManager } from './BagManager'
+import { ItemStatus } from './ItemStatus';
 const { ccclass, property } = _decorator;
 
 @ccclass('UIManager')
 export class UIManager extends Component {
-    // [1]
-    // dummy = '';
+    @property({
+        type: BagManager
+    })
+    bagManager: BagManager = null!;
 
-    // [2]
-    // @property
-    // serializableDummy = 0;
+    @property({
+        type: Fade
+    })
+    fade: Fade = null!;
+    @property({
+        type: Node
+    })
+    startUI: Node = null!;
+    @property({
+        type: Node
+    })
+    gameUI: Node = null!;
+    @property({
+        type: Node
+    })
+    infoUI: Node = null!;
     @property({
         type: Node,
     })
-    bagBtn: Node = null!;
-    @property({
-        type: Node,
-    })
-    menuBtn: Node = null!;
-    @property({
-        type: Node,
-    })
-    bag: Node = null!;
-    @property({
-        type: Node,
-    })
-    menu: Node = null!;
+    select: Node = null!;
 
-    public OpenBag() {
-        director.resume();
-        this.bag.active = true;
+    public StartGame() {
+        this.gameUI.active = true;
     }
-    public OpenMenu() {
-        director.pause();
-        this.menu.active = true;
+    public RestartGame() {
+        this.startUI.active = true;
     }
-    public CloseBag() {
-        director.resume();
-        this.bag.active = false;
+    public Close(event: Event) {
+        let btn = event!.target as Node;
+        btn.parent!.active = false;
     }
-    public CloseMenu() {
-        director.resume();
-        this.menu.active = false;
-    }
-    public SwitchScene(event: Event, custom: string) {
-        
+    public ShowInfo(event: Event) {
+        let btn = event!.target as Node;
+        let itemStatus = btn.getComponent(ItemStatus);
+        if (!itemStatus?.isInBag) {
+            this.infoUI.active = true;
+            let name = this.infoUI.children[3].getComponent(Label);
+            name!.string = btn.name;
+        }
+        else {
+            if (itemStatus.isLong) {
+                this.infoUI.active = true;
+                let name = this.infoUI.children[3].getComponent(Label);
+                name!.string = btn.name;
+            }
+        }
     }
     start () {
         // [3]

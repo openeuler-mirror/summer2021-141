@@ -23,14 +23,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 27
+        "__id__": 9
       },
       {
-        "__id__": 29
+        "__id__": 11
       }
     ],
     "_prefab": {
-      "__id__": 31
+      "__id__": 13
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -77,7 +77,7 @@
       "__id__": 2
     },
     "asset": {
-      "__uuid__": "9f9074f7-f143-469d-96a6-5fe9b32736b5@c1db2",
+      "__uuid__": "533ab2f4-6a7f-47c8-bdde-33fa4a4c100c@c1db2",
       "__expectedType__": "cc.Prefab"
     },
     "fileId": "733gJTHF5WH5dUOGgaLWXo",
@@ -87,7 +87,7 @@
   },
   {
     "__type__": "cc.PrefabInstance",
-    "fileId": "07P5tvYRpEXIMOzlLtKuay",
+    "fileId": "20oR1/EgBLSICYdSODUfv0",
     "prefabRootNode": {
       "__id__": 1
     },
@@ -102,33 +102,6 @@
       },
       {
         "__id__": 8
-      },
-      {
-        "__id__": 9
-      },
-      {
-        "__id__": 11
-      },
-      {
-        "__id__": 13
-      },
-      {
-        "__id__": 15
-      },
-      {
-        "__id__": 17
-      },
-      {
-        "__id__": 19
-      },
-      {
-        "__id__": 21
-      },
-      {
-        "__id__": 23
-      },
-      {
-        "__id__": 25
       }
     ],
     "removedComponents": []
@@ -160,7 +133,7 @@
     "value": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 0.18,
+      "y": 0,
       "z": 0
     }
   },
@@ -181,150 +154,6 @@
     }
   },
   {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 10
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "11JUhvEglXl552TOQoW/cs"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 12
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "4acnrratBXrJ+cokMWwnvd"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 14
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "a0v6/4owtUeoJgmzwdHgpI"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 16
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "19Td22pp1ZaLwosHvRDBaT"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 18
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "9d10cW0BtT36pg5/1r9rTM"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 20
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "2cwnX5QchZ75thTS+3PA4i"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 22
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "05nqYECUldbpVex10Q3BaQ"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 24
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "acyHv+W0xbkYZEK/cdE4jE"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 26
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "6eATP11gJQ8pH7P3iC2OPJ"
-    ]
-  },
-  {
     "__type__": "cc.BoxCollider",
     "_name": "",
     "_objFlags": 0,
@@ -333,7 +162,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 28
+      "__id__": 10
     },
     "_material": null,
     "_isTrigger": true,
@@ -364,7 +193,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 30
+      "__id__": 12
     },
     "isBar": false,
     "isHW": false,

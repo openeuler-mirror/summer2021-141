@@ -1,0 +1,69 @@
+{
+    "question":
+    [
+        {
+            "description":"选择openEuler的开源项目",
+            "aOption":"Kubenetes",
+            "bOption":"SiteWhere",
+            "cOption":"iSula",
+            "dOption":"vue",
+            "right":"C"
+        },
+        {
+          "description": "基于AI开发的智能优化引擎是哪个开源项目",
+          "aOption": "OpenStack",
+          "bOption": "tensorflow",
+          "cOption": "HBase",
+          "dOption": "A-Tune",
+          "right": "D"
+        },
+        {
+          "description": "毕昇JDK中JDK最准确的意思是",
+          "aOption": "工具以及工具接口",
+          "bOption": "Java开发工具包",
+          "cOption": "编译器和调试器",
+          "dOption": "Java运行时的虚拟机",
+          "right": "B"
+        },
+        {
+          "description": "不属于secGear的架构层的是",
+          "aOption": "服务层",
+          "bOption": "中间件层",
+          "cOption": "基础层",
+          "dOption": "工具层",
+          "right": "D"
+        },
+        {
+          "description": "哪一项不是StratoVirt的特征之一",
+          "aOption": "强安全性",
+          "bOption": "轻量低噪",
+          "cOption": "极速伸缩",
+          "dOption": "异构减弱",
+          "right": "D"
+        },
+        {
+          "description": "貂蝉compliance将License内容分为三种部分，其中不属于的是",
+          "aOption": "Should",
+          "bOption": "Can",
+          "cOption": "Must",
+          "dOption": "Cannot",
+          "right": "A"
+        },
+      {
+        "description": "不属于Package Management的是",
+        "aOption": "Binary Info",
+        "bOption": "Package Info",
+        "cOption": "Product Info",
+        "dOption": "Depend Info",
+        "right": "C"
+      },
+      {
+        "description": "compass-ci不包含的功能是",
+        "aOption": "构建&测试系统",
+        "bOption": "漏洞管理",
+        "cOption": "登录调测、辅助定位",
+        "dOption": "测试分析比较",
+        "right": "B"
+      }
+    ]
+}

@@ -117,22 +117,6 @@
         ".json"
       ],
       "subMetas": {}
-    },
-    "22e2a": {
-      "importer": "gltf-material",
-      "uuid": "f00a2bd2-0c6d-4753-886b-05edc277cdde@22e2a",
-      "displayName": "",
-      "id": "22e2a",
-      "name": "材质.material",
-      "userData": {
-        "gltfIndex": 0
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
     }
   },
   "userData": {
@@ -158,11 +142,13 @@
         "f00a2bd2-0c6d-4753-886b-05edc277cdde@229a8"
       ],
       "materials": [
-        "f00a2bd2-0c6d-4753-886b-05edc277cdde@22e2a"
+        "3218b2dc-2444-45d2-8c09-303fc4599703"
       ],
       "scenes": [
         "f00a2bd2-0c6d-4753-886b-05edc277cdde@49061"
       ]
-    }
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/materials/road"
   }
 }

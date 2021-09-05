@@ -23,14 +23,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 13
+        "__id__": 9
       },
       {
-        "__id__": 15
+        "__id__": 11
       }
     ],
     "_prefab": {
-      "__id__": 17
+      "__id__": 13
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -77,7 +77,7 @@
       "__id__": 2
     },
     "asset": {
-      "__uuid__": "b06a7872-faa7-48bb-afea-1a5994a634c6@84d50",
+      "__uuid__": "4fdb6d21-f5ab-4e0d-ab37-1bff4025a824@84d50",
       "__expectedType__": "cc.Prefab"
     },
     "fileId": "37mhHoSGdRvprTRveZ6zqK",
@@ -87,7 +87,7 @@
   },
   {
     "__type__": "cc.PrefabInstance",
-    "fileId": "03CNDvC4xP6obUjvPj5UBT",
+    "fileId": "97ROhAlOxK0b57VHEY7JKf",
     "prefabRootNode": {
       "__id__": 1
     },
@@ -102,12 +102,6 @@
       },
       {
         "__id__": 8
-      },
-      {
-        "__id__": 9
-      },
-      {
-        "__id__": 11
       }
     ],
     "removedComponents": []
@@ -139,7 +133,7 @@
     "value": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -0.046,
+      "y": 0,
       "z": 0
     }
   },
@@ -160,38 +154,6 @@
     }
   },
   {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 10
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "11V5TE+8tbm6z8HHId/irC"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 12
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "f9t7LBzZFaSZTXSogEest3"
-    ]
-  },
-  {
     "__type__": "cc.BoxCollider",
     "_name": "",
     "_objFlags": 0,
@@ -200,7 +162,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 14
+      "__id__": 10
     },
     "_material": null,
     "_isTrigger": true,
@@ -231,7 +193,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 16
+      "__id__": 12
     },
     "isBar": true,
     "isHW": false,

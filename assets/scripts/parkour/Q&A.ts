@@ -1,8 +1,9 @@
 
-import { _decorator, Component, Node, NodePool, Prefab, instantiate, CCBoolean, math, randomRangeInt, RichText, director, Camera, Vec3, Label, Event } from 'cc';
+import { _decorator, Component, Node, NodePool, Prefab, instantiate, CCBoolean, math, randomRangeInt, RichText, director, Camera, Vec3, Label, Event, randomRange, color } from 'cc';
 import { DEBUG } from 'cc/env';
 import { GameManager } from './GameManager';
 import { PlayerControl } from './PlayerControl';
+import { GlobalFunction } from '../global/GlobalFunction';
 const { ccclass, property } = _decorator;
 
 @ccclass('QA')
@@ -24,41 +25,20 @@ export class QA extends Component {
     })
     questions: Node = null!;
     @property({
+        type: Label,
+    })
+    question: Label = null!;
+    @property({
         type: Node,
     })
     downCount: Node = null!;
+    @property({
+        type: GlobalFunction
+    })
+    globalFunc: GlobalFunction = null!;
 
-    public test() {
-        this.gameManager.KeepGo();
-    }
+    sa = 0;
 
-
-    public DownCount(time: number) {
-        this.downCount.active = true;
-        this.downCount.children[0].active = false;
-        this.downCount.children[1].active = false;
-        this.downCount.children[2].active = false;
-        this.downCount.children[3].active = false;
-        /*for (let i = 1; i < this.downCount.children.length; i++) {
-            this.schedule(this.downCount.children[i].active = true, 1);
-        }*/
-        this.scheduleOnce(this.Down0, time - 3);
-        this.scheduleOnce(this.Down1, time - 2);
-        this.scheduleOnce(this.Down2, time - 1);
-       // this.scheduleOnce(this.gameManager.KeepGo, 4);
-    }
-    public Down0() {
-        this.downCount.children[0].active = true;
-        this.downCount.children[1].active = true;
-    }
-    public Down1() {
-        this.downCount.children[1].active = false;
-        this.downCount.children[2].active = true;
-    }
-    public Down2() {
-        this.downCount.children[2].active = false;
-        this.downCount.children[3].active = true
-    }
     public KeepGo() {
         //this.QAPanel.active = false;
         this.downCount.active = false;
@@ -67,8 +47,47 @@ export class QA extends Component {
         console.log("keepgo");
     }
 
+    public SetQA() {
+        let a = randomRangeInt(0, 8);
+        if (this.sa == a) {
+            if (this.sa != 0) {
+                a = randomRangeInt(0, this.sa);
+            }
+            else {
+                a = randomRangeInt(1, 8);
+            }
+        }
+        else {
+            this.sa = a;
+        }
+        this.question.string = this.globalFunc.questionBank[a].description;
+        this.questions.children[0].children[2].getComponent(Label)!.string = this.globalFunc.questionBank[a].aOption;
+        this.questions.children[1].children[2].getComponent(Label)!.string = this.globalFunc.questionBank[a].bOption;
+        this.questions.children[2].children[2].getComponent(Label)!.string = this.globalFunc.questionBank[a].cOption;
+        this.questions.children[3].children[2].getComponent(Label)!.string = this.globalFunc.questionBank[a].dOption;
+        switch (this.globalFunc.questionBank[a].right) {
+            case "A":
+                this.questions.children[0].getComponent(QA)!.isTrue = true;
+                break;
+            case "B":
+                this.questions.children[1].getComponent(QA)!.isTrue = true;
+                break;
+            case "C":
+                this.questions.children[2].getComponent(QA)!.isTrue = true;
+                break;
+            case "D":
+                this.questions.children[3].getComponent(QA)!.isTrue = true;
+                break;
+            default:
+                console.log("erro");
+                break;
+        }
+    }
+
     public Select(event: Event) {
         let btn = event!.target as Node;
+        let lab = btn.children[2].getComponent(Label);
+        lab!.color = color(255,255,255);
         if (btn.getComponent(QA)?.isTrue) {
             btn.children[0].active = true;
             btn.children[1].active = false;
@@ -92,10 +111,14 @@ export class QA extends Component {
         for (let i = 0; i < this.questions.children.length; i++) {
             this.questions.children[i].children[0].active = false;
             this.questions.children[i].children[1].active = false;
+            let lab = this.questions.children[i].children[2].getComponent(Label);
+            lab!.color = color(62, 105, 160);
+            this.questions.children[i].getComponent(QA)!.isTrue = false;
         }
     }
     public Failed() {
         this.ResetStatus();
+        this.gameManager.QAPanel.children[1].scale = new Vec3(0, 0, 0);
         this.gameManager.GameOver(false);
     }
     public Succeed() {

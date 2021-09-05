@@ -1,0 +1,109 @@
+{
+  "ver": "2.0.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d984297b-6792-4ffa-bc28-698d75663823",
+  "files": [],
+  "subMetas": {
+    "87e21": {
+      "importer": "gltf-mesh",
+      "uuid": "d984297b-6792-4ffa-bc28-698d75663823@87e21",
+      "displayName": "",
+      "id": "87e21",
+      "name": "Default.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "459f8": {
+      "importer": "gltf-embeded-image",
+      "uuid": "d984297b-6792-4ffa-bc28-698d75663823@459f8",
+      "displayName": "",
+      "id": "459f8",
+      "name": "路面02.png.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "dcd5a": {
+      "importer": "texture",
+      "uuid": "d984297b-6792-4ffa-bc28-698d75663823@dcd5a",
+      "displayName": "",
+      "id": "dcd5a",
+      "name": "路面02.png.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d984297b-6792-4ffa-bc28-698d75663823@459f8"
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "90c15": {
+      "importer": "gltf-scene",
+      "uuid": "d984297b-6792-4ffa-bc28-698d75663823@90c15",
+      "displayName": "",
+      "id": "90c15",
+      "name": "路面03.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "路面02.png",
+        "uri": "d984297b-6792-4ffa-bc28-698d75663823@459f8"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "redirect": "d984297b-6792-4ffa-bc28-698d75663823@90c15",
+    "assetFinder": {
+      "meshes": [
+        "d984297b-6792-4ffa-bc28-698d75663823@87e21"
+      ],
+      "skeletons": [],
+      "textures": [
+        "d984297b-6792-4ffa-bc28-698d75663823@dcd5a"
+      ],
+      "materials": [
+        "3218b2dc-2444-45d2-8c09-303fc4599703"
+      ],
+      "scenes": [
+        "d984297b-6792-4ffa-bc28-698d75663823@90c15"
+      ]
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/materials/road"
+  }
+}

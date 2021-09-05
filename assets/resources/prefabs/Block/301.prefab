@@ -220,7 +220,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "d768740c-8c2e-45e9-89ff-4c88362ba5ff@88223",
+        "__uuid__": "d0907cf1-d59f-4027-9216-f583c99c20c8@88223",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -229,7 +229,7 @@
       "__id__": 8
     },
     "_mesh": {
-      "__uuid__": "d768740c-8c2e-45e9-89ff-4c88362ba5ff@2e18e",
+      "__uuid__": "d0907cf1-d59f-4027-9216-f583c99c20c8@2e18e",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,
@@ -325,7 +325,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "d768740c-8c2e-45e9-89ff-4c88362ba5ff@ed9a5",
+        "__uuid__": "d0907cf1-d59f-4027-9216-f583c99c20c8@ed9a5",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -334,7 +334,7 @@
       "__id__": 13
     },
     "_mesh": {
-      "__uuid__": "d768740c-8c2e-45e9-89ff-4c88362ba5ff@87e21",
+      "__uuid__": "d0907cf1-d59f-4027-9216-f583c99c20c8@87e21",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,

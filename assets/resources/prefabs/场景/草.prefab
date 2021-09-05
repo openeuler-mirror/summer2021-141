@@ -174,10 +174,10 @@
       "__id__": 7
     },
     "_mesh": {
-      "__uuid__": "477d0e6a-2970-4400-925b-06b1e1f2e8eb@8974b",
+      "__uuid__": "92baa543-3fc0-480c-8bf6-57e59d93b54b@8974b",
       "__expectedType__": "cc.Mesh"
     },
-    "_shadowCastingMode": 0,
+    "_shadowCastingMode": 1,
     "_shadowReceivingMode": 1,
     "_enableMorph": true,
     "_id": ""

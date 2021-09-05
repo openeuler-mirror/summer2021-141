@@ -226,7 +226,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "89b55847-7a64-4598-af16-0ba2f9fdefed@7c465",
+        "__uuid__": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@7c465",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -235,7 +235,7 @@
       "__id__": 8
     },
     "_mesh": {
-      "__uuid__": "89b55847-7a64-4598-af16-0ba2f9fdefed@250d3",
+      "__uuid__": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@250d3",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,
@@ -331,7 +331,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "89b55847-7a64-4598-af16-0ba2f9fdefed@0bf5c",
+        "__uuid__": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@0bf5c",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -340,7 +340,7 @@
       "__id__": 13
     },
     "_mesh": {
-      "__uuid__": "89b55847-7a64-4598-af16-0ba2f9fdefed@7a229",
+      "__uuid__": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@7a229",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,
@@ -436,7 +436,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "89b55847-7a64-4598-af16-0ba2f9fdefed@cb064",
+        "__uuid__": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@cb064",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -445,7 +445,7 @@
       "__id__": 18
     },
     "_mesh": {
-      "__uuid__": "89b55847-7a64-4598-af16-0ba2f9fdefed@b690e",
+      "__uuid__": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@b690e",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,
@@ -541,7 +541,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "89b55847-7a64-4598-af16-0ba2f9fdefed@cb064",
+        "__uuid__": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@cb064",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -550,7 +550,7 @@
       "__id__": 23
     },
     "_mesh": {
-      "__uuid__": "89b55847-7a64-4598-af16-0ba2f9fdefed@c634a",
+      "__uuid__": "d777a715-2d2f-40d9-8a85-d4a6b26fbaa9@c634a",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 1,

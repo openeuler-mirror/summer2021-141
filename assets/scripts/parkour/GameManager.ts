@@ -162,7 +162,7 @@ export class GameManager extends Component {
         }
         for (let i = 0; i < this.itemPerfabs.length; i++) {
             if (i < 1) {
-                for (let j = 0; j < 80; j++) {
+                for (let j = 0; j < 20; j++) {
                     let temp = instantiate(this.itemPerfabs[i]);
                     this._itemPools[0].put(temp);
                 }
@@ -174,7 +174,6 @@ export class GameManager extends Component {
                 }
             }
         }
-        console.log(this._itemPools[0].size()+"||||");
     }
     public coinPoolRestore(item: Node)
     {
@@ -204,28 +203,40 @@ export class GameManager extends Component {
     public VMPoolRestore(item: Node) {
         this._itemPools[4].put(item);
     }
+    public Cll() {
+        this.endPanel.active = false;
+    }
+    public Restart() {
+        for (let i = 0; i < this._itemPools.length; i++)
+            this._itemPools[i].clear();
+        let pos = this.player.position.clone();
+        pos.z += 288.5;
+        pos.y += 2;
+        this.bg.setPosition(pos);
+        this.endPanel.active = false;
+        this.playerCurentZ = 0;
+        this.playerLastZ = 0;
+        this.coinCount = 0;
+        this.isPause = false;
+        this. isStart = false;
+        this.isContinue= false;
+        this.SetItemPool();
+       // this.SetBarPool();
+        this.GameStart();
+    }
     public GS() {
-        this.t1 = 10;
         this.downCount.active = false;
-        this.downCount.children[1].scale = new Vec3(1.2, 1.2, 1.2);
         this.isStart = true;
         this.playerControl.OnStart();
-        /*for (let i = 0; i < this.coinPoolNumber - 5; ++i) {
-            let coin = this._coinPool.get();
-            if (coin != null) {
-                coin.parent = this.coinRoot;
-                coin.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 0.7, 5 * i));
-            }
-        }*/
-        for (let i = 0; i < this.coinPoolNumber - 5; ++i) {
-            if (this.coinCount > 50) {
+        for (let i = 0; i < 10; ++i) {
+            if (this.coinCount > 30) {
                 this.coinCount = 0;
                 let b = randomRangeInt(1, 5);
                 let item = this._itemPools[b].get();
                 if (item != null) {
                     this.coinCount = 0;
                     item.parent = this.coinRoot;
-                    item.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 0.7, 5 * i+150));
+                    item.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 2.2, 5 * i+150));
                 }
             }
             else {
@@ -237,19 +248,6 @@ export class GameManager extends Component {
                 }
             }
         }
-       /* for (let i = 0; i < this.barPoolNumber - 2; ++i) {
-            let a = randomRangeInt(0, 5);
-            let bar = this._barPoolss[2][a].get();
-            if (bar != null) {
-                bar.parent = this.barRoot;
-                if (bar.name == "202" || bar.name == "203") {
-                    bar.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 2, 10 * i + 7.5));
-                }
-                else {
-                    bar.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 0.7, 10 * i + 7.5));
-                }
-            }
-        }*/
     }
     public GameStart() {
 
@@ -305,11 +303,6 @@ export class GameManager extends Component {
         this.pausePanel.active = true;
         this.pause.active = false;
     }
-    public CC() {
-        this.isPause = false;
-        this.downCount.active = false;
-        this.playerControl.animator.resume();
-    }
         
     public continueClick()
     {
@@ -332,7 +325,8 @@ export class GameManager extends Component {
             this._barPool.put(bar);
         }*/
         this.SetItemPool();
-        this.SetBarPool();
+        this.endPanel.active = false;
+       // this.SetBarPool();
         /*for (let i = 0; i < this.HWPoolNumber; ++i) {
             let hardWare = instantiate(this.hardWarePrefab);
             this._HWPool.put(hardWare);
@@ -372,11 +366,11 @@ export class GameManager extends Component {
     update(deltaTime: number)
     {
         if (!this.isPause && this.isStart) {//this.bg.setPosition(new math.Vec3(this.bg.position.x, this.bg.position.y, this.player.position.z + 300));
-            if (this.t1 > 0) this.t1 -= deltaTime;
-            if (this.t2 > 0) this.t2 -= deltaTime;
+            //if (this.t1 > 0) this.t1 -= deltaTime;
+            //if (this.t2 > 0) this.t2 -= deltaTime;
             let pos = this.camera.node.position.clone();
-            pos.z += 60;
-            pos.y -=4;
+            pos.z += 300;
+            pos.y -=3;
             this.bg.setPosition(pos);
             if (this.playerControl.phase == 3) {
                 if (this.playerControl.runSpeed <= 0)
@@ -384,8 +378,8 @@ export class GameManager extends Component {
             }
             this.playerCurentZ += this.player.position.z - this.playerLastZ;
             this.playerLastZ = this.player.position.z;
-            if (this.playerCurentZ > 30) {
-                this.playerCurentZ -= 30;
+            if (this.playerCurentZ > 60) {
+                this.playerCurentZ -= 60;
                 let childCoinLenth = this.coinRoot.children.length;
                 let tempZ = this.player.position.z;
                 if (this.playerControl.phase != 3 && this.player.position.z < 5050) {
@@ -410,13 +404,13 @@ export class GameManager extends Component {
                     //console.log(killCoinNumber + "?");
                     killCoinNumber = killCoinNumber < 6 ? 6 : killCoinNumber;
                     for (let i = 0; i < 6; ++i) {
-                        if (this.coinCount > 50) {
+                        if (this.coinCount > 30) {
                             let b = randomRangeInt(1, 5);
                             let item = this._itemPools[b].get();
                             if (item != null) {
                                 this.coinCount = 0
                                 item.parent = this.coinRoot;
-                                item.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 0.7, 200 + tempZ + 5 * i));
+                                item.setPosition(new math.Vec3(randomRangeInt(-1, 2) * 1.5, 2.2, 200 + tempZ + 5 * i));
                             }
                         }
                         else {

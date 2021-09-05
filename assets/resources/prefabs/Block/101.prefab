@@ -23,14 +23,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 13
+        "__id__": 9
       },
       {
-        "__id__": 15
+        "__id__": 11
       }
     ],
     "_prefab": {
-      "__id__": 17
+      "__id__": 13
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -77,7 +77,7 @@
       "__id__": 2
     },
     "asset": {
-      "__uuid__": "a9265422-ba24-4be3-85e7-a4f4ec49ffc7@92127",
+      "__uuid__": "b6520b63-a4fe-4e86-bd84-a519dd61b714@92127",
       "__expectedType__": "cc.Prefab"
     },
     "fileId": "2eGNnL28dVPaIu7lC1m1a9",
@@ -87,7 +87,7 @@
   },
   {
     "__type__": "cc.PrefabInstance",
-    "fileId": "06wZEB0CNM/K+os01uWPmN",
+    "fileId": "1c78/cYf1N9J35deydjvZD",
     "prefabRootNode": {
       "__id__": 1
     },
@@ -102,12 +102,6 @@
       },
       {
         "__id__": 8
-      },
-      {
-        "__id__": 9
-      },
-      {
-        "__id__": 11
       }
     ],
     "removedComponents": []
@@ -139,8 +133,8 @@
     "value": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -0.668,
-      "z": 5.093
+      "y": -0.542,
+      "z": 5.097
     }
   },
   {
@@ -160,38 +154,6 @@
     }
   },
   {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 10
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "45nHf5og9auYuD2stgKGis"
-    ]
-  },
-  {
-    "__type__": "CCPropertyOverrideInfo",
-    "targetInfo": {
-      "__id__": 12
-    },
-    "propertyPath": [
-      "_shadowCastingMode"
-    ],
-    "value": 1
-  },
-  {
-    "__type__": "cc.TargetInfo",
-    "localID": [
-      "51XzzHEMleYo5vqxXXSu1M"
-    ]
-  },
-  {
     "__type__": "cc.BoxCollider",
     "_name": "",
     "_objFlags": 0,
@@ -200,7 +162,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 14
+      "__id__": 10
     },
     "_material": null,
     "_isTrigger": true,
@@ -231,7 +193,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 16
+      "__id__": 12
     },
     "isBar": true,
     "isHW": false,

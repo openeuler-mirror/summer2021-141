@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, director } from 'cc';
+import { _decorator, Component, Node, director, loader } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('GlobalFunction')
@@ -11,8 +11,10 @@ export class GlobalFunction extends Component {
     // @property
     // serializableDummy = 0;
 
+    public questionBank: any;
+
     start () {
-        // [3]
+        this.questionJsonLoad()
     }
     public resumeGame()
     {
@@ -33,6 +35,25 @@ export class GlobalFunction extends Component {
     // update (deltaTime: number) {
     //     // [4]
     // }
+    public questionJsonLoad()
+    {
+        loader.loadRes('Json/Question.json',  (err, jsonAsset) => {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            this.questionBank = jsonAsset.json.question;
+            console.log(this.questionBank);
+        });
+    }
+}
+interface question {
+    description: string;
+    aOption: string;
+    bOption: string;
+    cOption: string;
+    dOption: string;
+    right: string;
 }
 
 /**

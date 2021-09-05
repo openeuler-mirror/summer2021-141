@@ -18,14 +18,16 @@ export class Fade extends Component {
 
     public FadeIn() {
         this.mask.active = true;
-        this.anim.play();
-        this.scheduleOnce(this.A,0.5);
+        this.anim.play("Fade");
+        this.scheduleOnce(this.A, 0.5);
+        console.log("jksksj");
     }
     public A() {
         this.mask.active = false;
     }
-    start () {
-        // [3]
+    start() {
+        this.anim.play();
+        console.log("jksksj");
     }
 
      //update (deltaTime: number) {

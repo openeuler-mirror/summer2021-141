@@ -7,27 +7,27 @@ export class ItemS extends Component {
     @property({
         type: Boolean
     })
-    isBar: boolean = false;
+    isBar = false;
     @property({
         type: Boolean
     })
-    isHW: boolean = false;
+    isHW = false;
     @property({
         type: Boolean
     })
-    isRB: boolean = false;
+    isRB = false;
     @property({
         type: Boolean
     })
-    isCN: boolean = false;
+    isCN = false;
     @property({
         type: Boolean
     })
-    isVM: boolean = false;
+    isVM = false;
     @property({
         type: Boolean
     })
-    isCoin: boolean = false;
+    isCoin = false;
 
     start () {
         // [3]

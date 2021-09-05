@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, Component, Node,Canvas, view, macro, find, UITransform } from 'cc';
 import { Fade } from './Fade'
 const { ccclass, property } = _decorator;
 
@@ -13,16 +13,59 @@ export class GameManager2 extends Component {
         type: Fade
     })
     fade: Fade = null!;
-    code: Number = 0;
+    @property({
+        type: Node
+    })
+    startUI: Node = null!;
+    @property({
+        type: Node
+    })
+    gameUI: Node = null!;
+
+    code = 0;
+
+    public SetSceneHorizental() {
+        let framesize = view.getFrameSize();
+        let cvsize = view.getCanvasSize();
+        view.setOrientation(macro.ORIENTATION_LANDSCAPE);
+        if (framesize.height > framesize.width)
+            view.setFrameSize(framesize.height, framesize.width);
+        let s = view.getDesignResolutionSize();
+        view.setDesignResolutionSize(s.height, s.width, 2);
+        view.setCanvasSize(cvsize.height, cvsize.width);
+    }
+    public SetSceneVertical() {
+        let framesize = view.getFrameSize();
+        let cvsize = view.getCanvasSize();
+        view.setOrientation(macro.ORIENTATION_PORTRAIT);
+        if (framesize.width > framesize.height)
+            view.setFrameSize(framesize.height, framesize.width);
+        let s = view.getDesignResolutionSize();
+        view.setDesignResolutionSize(s.height, s.width, 2);
+        view.setCanvasSize(cvsize.height, cvsize.width);
+    }
+
     public SwitchScene(event: Event, custom: string) {
         this.fade.FadeIn()
         this.code = Number(custom);
-        this.scheduleOnce(this.SS, 0.25);
+        this.scheduleOnce(this.StartScene, 0.25);
     }
-    public SS() {
+    public StartGame() {
+        this.startUI.active = false;
+        this.gameUI.active = true;
+        this.StartScene();
+    }
+    public RestartGame() {
+        this.gameUI.active = false;
+        this.startUI.active = true;
+    }
+    public StartScene() {
         for (let i = 0; i < this.scenes.length; i++)
             this.scenes[i].active = false;
-        this.scenes[Number(this.code)].active = true;
+        this.scenes[this.code].active = true;
+    }
+    onLoad() {
+        this.SetSceneHorizental();
     }
     start () {
         // [3]

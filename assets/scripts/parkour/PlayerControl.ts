@@ -1,9 +1,10 @@
 
-import { absMax, CCFloat, Collider, director, Enum, Event, find, ITriggerEvent, RichText, RigidBody, Script, tween, Scheduler, animation } from 'cc';
+import { absMax, CCFloat, Collider, director, Enum, Event, find, ITriggerEvent, RichText, RigidBody, Script, tween, Scheduler, animation, BoxCollider, Vec3, physics, Label } from 'cc';
 import { EventTouch, Touch, math } from 'cc';
 import { _decorator, Component, Node, SkeletalAnimation, CCLoader, systemEvent, SystemEventType, Animation } from 'cc';
 import { GameManager } from './GameManager';
 import { ItemS } from './ItemS';
+import { QA } from './Q&A';
 const { ccclass, property } = _decorator;
 
 @ccclass('PlayerControl')
@@ -26,24 +27,25 @@ export class PlayerControl extends Component {
         type: CCFloat,
     })
     runSpeed = 10;
-    @property({
-        type: SkeletalAnimation,
-    })
-    public animator: SkeletalAnimation = null!;
+
 
     @property({
         type: GameManager
     })
     gameManager: GameManager = null!;
     @property(
-        { type: RichText }
+        { type: Label }
     )
-    scoreText: RichText = null!;
+    scoreText: Label = null!;
 
     @property(
         { type: Node }
     )
     endPanel: Node = null!;
+    @property(
+        { type: QA }
+    )
+    qa: QA = null!;
     @property(
         { type: Node }
     )
@@ -77,7 +79,7 @@ export class PlayerControl extends Component {
     t3 = 0;
     t4 = 0;
     public phase = 0;
-    speeds: number[] = [15, 20, 30];
+    speeds: number[] = [20, 25, 30];
     
     touchX = 0;
     touchY = 0;
@@ -101,6 +103,31 @@ export class PlayerControl extends Component {
         this.playerStatus = this.status.Normal;
         systemEvent.on(SystemEventType.TOUCH_START, this.onTouchStartEvent, this);
         systemEvent.on(SystemEventType.TOUCH_END, this.onTouchEndEvent, this);
+    }
+    public Restart() {
+        this.bg1.active = true;
+        this.bg2.active = false;
+        this.bg3.active = false;
+        this.node.position = new Vec3(0, 0, 0);
+        this.animator.stop();
+        this.isInvisibleH = false;
+        this.isInvisibleR = false;
+        this.isAccelerate = false;
+        this.isAbsorb = false;
+        this.phase = 0;
+        this.t1 = 0;
+        this.t2 = 0;
+        this.t3 = 0;
+        this.t4 = 0;
+        this.touchX = 0;
+        this. touchY = 0;
+        this. curentX = 0;
+        this.targetX = 0;
+        this.jump = false;
+        this. slip = false;
+        this.turn = false;
+        this.curentZ = 0;
+        this.score = 0;
     }
     public OnStart()
     {
@@ -150,8 +177,12 @@ export class PlayerControl extends Component {
                 difX = 0;
                 this.slip = true;
                 this.animator.play("life");
+                this.node.getComponent(BoxCollider)!.size = new Vec3(0.5,0.5,0.5);
+                this.node.getComponent(BoxCollider)!.center = new Vec3(0, 0.3, 0.1);
                 setTimeout(() => {
                     this.slip = false;
+                    this.node.getComponent(BoxCollider)!.size = new Vec3(0.5,1.5,0.5);
+                    this.node.getComponent(BoxCollider)!.center = new Vec3(0, 0.8, 0.1);
                     this.animator.crossFade("run");
                 }, this.jumpTime * 1200);
                 console.log("slip");
@@ -194,6 +225,7 @@ export class PlayerControl extends Component {
         }
         else if (instance.getComponent(ItemS)?.isBar && this.isInvisibleH == false && !this.gameManager.isPause) {
             if (this.isInvisibleR == false) {
+                this.qa.SetQA();
                 let anim = this.QAPanel.children[1].getComponent(Animation)!;
                 this.QAPanel.active = true;
                 anim.play();
@@ -240,18 +272,25 @@ export class PlayerControl extends Component {
     update(deltaTime: number)
     {
         console.log(this.node.position.z);
-        if (this.phase!=3) this.runSpeed = this.speeds[this.phase];
-        if (this.node.position.z > 1700 && this.phase == 0) {
+        if (this.phase != 3) {
+            if (this.node.position.z < 6800) this.runSpeed = 20 + this.node.position.z * 5 / 3400;
+            else this.runSpeed = 30;
+        }
+        if (this.node.position.z > 3400 && this.phase == 0) {
             this.phase = 1;
-            //this.bg1.active = false;
-           // this.bg2.active = true;
         }
-        if (this.node.position.z > 3400 && this.phase == 1) {
+        if (this.node.position.z > 3695 && this.phase == 1) {
+            this.bg1.active = false;
+            this.bg2.active = true;
+        }
+        if (this.node.position.z > 6800 && this.phase == 1) {
             this.phase = 2;
-          // this.bg2.active = false;
-           // this.bg3.active = true;
         }
-        if (this.node.position.z > 5100 && this.phase == 2) {
+        if (this.node.position.z > 7100 && this.phase == 2) {
+            this.bg2.active = false;
+            this.bg3.active = true;
+        }
+        if (this.node.position.z > 10200 && this.phase == 2) {
             this.phase = 3;
             for (let i = 0; i < this.gameManager.barRoot.children.length; i++)
                 this.gameManager.barRoot.children[i].active = false;
@@ -259,6 +298,8 @@ export class PlayerControl extends Component {
         if (this.phase == 3) {
             this.runSpeed -= this.speeds[2]/5 * deltaTime;
         }
+        if (this.runSpeed <= 0)
+            this.animator.stop();
         if (!this.gameManager.isPause && this.gameManager.isStart) {
             if (this.isInvisibleH) {
                 this.t1 -= deltaTime;
@@ -291,7 +332,12 @@ export class PlayerControl extends Component {
                            // this.gameManager.coinPoolRestore(this.coins.children[i]);
                           //  this.score++;
                          //   this.scoreText.string = this.score.toString();
-                            tween(this.coins.children[i].position).to(1, this.node.position).start();
+                            //tween(this.coins.children[i].position).to(1, this.node.position).start();
+                            let pos = this.coins.children[i].position.clone();
+                            pos.x = math.lerp(pos.x, this.node.position.x, 1.8 / this.fadeTime * deltaTime * 4);
+                            pos.z = math.lerp(pos.z, this.node.position.z + this.speeds[this.phase] / 15, 1.8 / this.fadeTime * deltaTime * 4);
+                            pos.y = math.lerp(pos.y, this.node.position.y+0.8, 1.8 / this.fadeTime * deltaTime * 4);
+                            this.coins.children[i].setPosition(pos);
                         }
                     }
                 }
