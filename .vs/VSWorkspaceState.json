@@ -3,10 +3,10 @@
     "",
     "\\assets",
     "\\assets\\scripts",
-    "\\assets\\scripts\\global",
-    "\\assets\\scripts\\parkour",
+    "\\assets\\scripts\\Adaptor",
+    "\\assets\\scripts\\puzzle",
     "\\assets\\scripts\\start"
   ],
-  "SelectedNode": "\\assets\\scripts\\global\\GlobalFunction.ts",
+  "SelectedNode": "\\assets\\scripts\\Adaptor\\MultiResoultionCompat.ts",
   "PreviewInSolutionExplorer": false
 }

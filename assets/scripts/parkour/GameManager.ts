@@ -9,6 +9,7 @@ export class GameManager extends Component {
     // [1]
     // dummy = '';
 
+    ////////////////////////21212121212
     // [2]
     // @property
     // serializableDummy = 0;
@@ -276,7 +277,7 @@ export class GameManager extends Component {
     }
     
     public GameOver(isSucceed: boolean) {
-        this.score1.string = Math.floor(this.playerControl.score * 1000 + this.player.position.z * 100).toString();
+        this.score1.string = Math.floor(this.playerControl.score * 10 + this.player.position.z * 15).toString();
         if (isSucceed) {
             this.isPause = true;
             this.endPanel.active = true;

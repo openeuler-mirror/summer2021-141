@@ -32,6 +32,10 @@ export class UIManager extends Component {
         type: Node,
     })
     select: Node = null!;
+    @property({
+        type: Node,
+    })
+    scenes: Node[] = [];
 
     public StartGame() {
         this.gameUI.active = true;
@@ -46,18 +50,21 @@ export class UIManager extends Component {
     public ShowInfo(event: Event) {
         let btn = event!.target as Node;
         let itemStatus = btn.getComponent(ItemStatus);
-        if (!itemStatus?.isInBag) {
+        if (!itemStatus?.isInBag && !itemStatus?.synGet && itemStatus?.isItem) {
             this.infoUI.active = true;
             let name = this.infoUI.children[3].getComponent(Label);
             name!.string = btn.name;
         }
         else {
-            if (itemStatus.isLong) {
+            if (itemStatus!.isLong) {
                 this.infoUI.active = true;
                 let name = this.infoUI.children[3].getComponent(Label);
                 name!.string = btn.name;
             }
         }
+    }
+    public CheckScene(event: Event, custom: string) {
+        this.scenes[Number(custom)].active = true;
     }
     start () {
         // [3]

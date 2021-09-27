@@ -17,15 +17,31 @@ export class ItemStatus extends Component {
     @property({
         type: Boolean
     })
+    public synGet = false;
+    @property({
+        type: Boolean
+    })
+    public canUse = false;
+    @property({
+        type: Boolean
+    })
     public canSyn = false;
     @property({
         type: Boolean
     })
     public isSelect = false;
     @property({
+        type: Boolean
+    })
+    public isItem = false;
+    @property({
         type: CCInteger
     })
     public synCode = -1;
+    @property({
+        type: CCInteger
+    })
+    public useCode = -1;
 
     public time = 0.5;
     public isStartTime = false;
@@ -35,6 +51,7 @@ export class ItemStatus extends Component {
         if (this.isInBag) {
             this.isStartTime = true;
             this.isLong = false;
+            this.time = 0.5;
         }
     }
     public TouchEnd() {

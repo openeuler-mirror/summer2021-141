@@ -35,9 +35,6 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 144
-      },
-      {
         "__id__": 146
       },
       {
@@ -48,10 +45,13 @@
       },
       {
         "__id__": 152
+      },
+      {
+        "__id__": 154
       }
     ],
     "_prefab": {
-      "__id__": 154
+      "__id__": 156
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -1996,6 +1996,9 @@
       },
       {
         "__id__": 143
+      },
+      {
+        "__id__": 144
       }
     ],
     "removedComponents": []
@@ -2048,6 +2051,26 @@
     }
   },
   {
+    "__type__": "CCPropertyOverrideInfo",
+    "targetInfo": {
+      "__id__": 145
+    },
+    "propertyPath": [
+      "_materials",
+      "0"
+    ],
+    "value": {
+      "__uuid__": "b92565dc-e96c-4ba6-acda-ec589da5a633",
+      "__expectedType__": "cc.Material"
+    }
+  },
+  {
+    "__type__": "cc.TargetInfo",
+    "localID": [
+      "ecfXVI9eNXN4ZeiOw0xMQ/"
+    ]
+  },
+  {
     "__type__": "cc.BoxCollider",
     "_name": "",
     "_objFlags": 0,
@@ -2056,7 +2079,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 145
+      "__id__": 147
     },
     "_material": null,
     "_isTrigger": false,
@@ -2087,7 +2110,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 147
+      "__id__": 149
     },
     "_material": null,
     "_isTrigger": true,
@@ -2118,7 +2141,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 149
+      "__id__": 151
     },
     "isBar": true,
     "isHW": false,
@@ -2141,7 +2164,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 151
+      "__id__": 153
     },
     "_material": null,
     "_isTrigger": true,
@@ -2172,7 +2195,7 @@
     },
     "_enabled": false,
     "__prefab": {
-      "__id__": 153
+      "__id__": 155
     },
     "_material": null,
     "_isTrigger": true,

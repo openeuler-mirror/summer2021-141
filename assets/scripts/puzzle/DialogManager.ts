@@ -12,9 +12,17 @@ export class DialogManager extends Component {
         type: Label,
     })
     lable: Label = null!;
+    @property({
+        type: Node,
+    })
+    me: Node = null!;
+    @property({
+        type: Node,
+    })
+    unknow: Node = null!;
 
     dialogCode = 0;
-    str: string[] = ["dialog1", "dialog2", "dialog3"];
+    str: string[] = ["我是谁不重要，重要的是我需要你的帮助。", "dialog2", "dialog3"];
     public OpenDialog() {
         this.dialog.active = true;
     }
@@ -32,6 +40,8 @@ export class DialogManager extends Component {
                 break;
         }
         this.dialogCode++;
+        this.me.active = !this.me.active;
+        this.unknow.active = !this.unknow.active;
     }
 
     start () {

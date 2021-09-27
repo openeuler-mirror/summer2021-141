@@ -217,11 +217,11 @@ export class BuildBlockPool extends Component {
 
     update(deltaTime: number)
     {
-        if (this.player.position.z>1995) {
+        if (this.player.position.z>3695) {
             director.getScene()!.globals.skybox.envmap = this.skyBoxes[1];
             director.getScene()!.globals.ambient.skyIllum = 20000;
         }
-        if (this.player.position.z > 3700) {
+        if (this.player.position.z > 7100) {
             director.getScene()!.globals.skybox.envmap = this.skyBoxes[2];
             director.getScene()!.globals.ambient.skyIllum = 40000;
         }

@@ -15,15 +15,25 @@ export class Sudoku extends Component {
     }
     public NumberAdd(event: Event) {
         let btn = event!.target as Node;
-        let label = btn.children[0].getComponent(Label);
+        let label = btn.children[9].getComponent(Label);
         if (label?.string != "") {
             let a = Number(label?.string);
             a++;
-            if (a > 9) a = 0;
+            if (a > 8) {
+                a = 0;
+                btn.children[8].active = false;
+                btn.children[0].active = true;
+            }
+            else {
+                btn.children[a - 1].active = false;
+                btn.children[a].active = true;
+            }
             label!.string = a.toString();
+
         }
         else {
             label!.string = "0";
+            btn.children[0].active = true;
         }
     }
 

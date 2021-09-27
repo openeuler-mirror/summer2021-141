@@ -27,7 +27,14 @@ export class PlayerControl extends Component {
         type: CCFloat,
     })
     runSpeed = 10;
-
+    @property({
+        type: SkeletalAnimation,
+    })
+    public animator: SkeletalAnimation = null!;
+    @property(
+        { type: Node }
+    )
+    men: Node[] = [];
 
     @property({
         type: GameManager
@@ -42,6 +49,11 @@ export class PlayerControl extends Component {
         { type: Node }
     )
     endPanel: Node = null!;
+
+    @property(
+        { type: Node }
+    )
+    effects: Node[] = [];
     @property(
         { type: QA }
     )
@@ -105,11 +117,19 @@ export class PlayerControl extends Component {
         systemEvent.on(SystemEventType.TOUCH_END, this.onTouchEndEvent, this);
     }
     public Restart() {
+        this.scoreText.string = "0";
         this.bg1.active = true;
         this.bg2.active = false;
         this.bg3.active = false;
         this.node.position = new Vec3(0, 0, 0);
         this.animator.stop();
+        this.men[1].active = false;
+        this.men[0].active = true;
+        this.men[2].active = false;
+        this.men[3].active = false;
+        this.men[4].active = false;
+        let anim = this.men[0].getComponent(SkeletalAnimation);
+        anim?.stop();
         this.isInvisibleH = false;
         this.isInvisibleR = false;
         this.isAccelerate = false;
@@ -131,7 +151,9 @@ export class PlayerControl extends Component {
     }
     public OnStart()
     {
-        this.animator.play("run");
+        let anim = this.men[0].getComponent(SkeletalAnimation);
+        anim?.play();
+       // this.animator.play("run");
         this.rigidBody = this.node.getComponent(RigidBody)!;
         let collider = this.node.getComponent(Collider)!;
         collider.on("onTriggerEnter", this.onTriggerEnter, this);
@@ -161,14 +183,23 @@ export class PlayerControl extends Component {
 
             //上下起跳
             console.log(difY);
-            if (Math.abs(difY) > Math.abs(difX) && difY < -30) {
+            if (Math.abs(difY) > Math.abs(difX) && difY < -30 && !this.jump) {
                 difX = 0;
                 this.jump = true;
-                this.animator.play("idle");
+                this.men[1].active = true;
+                this.men[0].active = false;
+                this.men[2].active = false;
+                this.men[3].active = false;
+                this.men[4].active = false;
+                let anim = this.men[1].getComponent(SkeletalAnimation);
+                anim?.play();
                 setTimeout(() => {
                     this.jump = false;
-                    this.animator.crossFade("run");
-                }, this.jumpTime * 1200);
+                    this.men[0].active = true;
+                    this.men[1].active = false;
+                    let anim = this.men[0].getComponent(SkeletalAnimation);
+                    anim?.play();
+                }, this.jumpTime * 1900);
                 this.rigidBody.applyForce(new math.Vec3(0, 23000, 0));
                 console.log("jump");
                 return;
@@ -176,32 +207,50 @@ export class PlayerControl extends Component {
             else if (Math.abs(difY) > Math.abs(difX) && difY > 30) {
                 difX = 0;
                 this.slip = true;
-                this.animator.play("life");
+                this.men[2].active = true;
+                this.men[0].active = false;
+                let anim = this.men[2].getComponent(SkeletalAnimation);
+                anim?.play();
                 this.node.getComponent(BoxCollider)!.size = new Vec3(0.5,0.5,0.5);
                 this.node.getComponent(BoxCollider)!.center = new Vec3(0, 0.3, 0.1);
                 setTimeout(() => {
                     this.slip = false;
                     this.node.getComponent(BoxCollider)!.size = new Vec3(0.5,1.5,0.5);
                     this.node.getComponent(BoxCollider)!.center = new Vec3(0, 0.8, 0.1);
-                    this.animator.crossFade("run");
-                }, this.jumpTime * 1200);
+                    this.men[0].active = true;
+                    this.men[2].active = false;
+                    let anim = this.men[0].getComponent(SkeletalAnimation);
+                    anim?.play();
+                }, this.jumpTime * 2300);
                 console.log("slip");
                 return;
             }
             //左右转向
             if (difX < -30) {
                 this.targetX = Math.max(this.curentX - 1.5, -1.5);
-                this.animator.play("dodgeRight");
+                this.men[3].active = true;
+                this.men[0].active = false;
+                let anim = this.men[3].getComponent(SkeletalAnimation);
+                anim?.play();
                 setTimeout(() => {
-                    this.animator.crossFade("run");
-                }, this.fadeTime * 1000);
+                    this.men[0].active = true;
+                    this.men[3].active = false;
+                    let anim = this.men[3].getComponent(SkeletalAnimation);
+                    anim?.play();
+                }, this.fadeTime * 800);
             }
             else if (difX > 30) {
                 this.targetX = Math.min(this.curentX + 1.5, 1.5);
-                this.animator.play("dodgeLeft");
+                this.men[4].active = true;
+                this.men[0].active = false;
+                let anim = this.men[4].getComponent(SkeletalAnimation);
+                anim?.play();
                 setTimeout(() => {
-                    this.animator.crossFade("run");
-                }, this.fadeTime * 1000);
+                    this.men[0].active = true;
+                    this.men[4].active = false;
+                    let anim = this.men[4].getComponent(SkeletalAnimation);
+                    anim?.play();
+                }, this.fadeTime * 800);
             }
             if (this.targetX != this.curentX) {
                 this.turn = true;
@@ -232,6 +281,7 @@ export class PlayerControl extends Component {
                 this.isAccelerate = false;
                 this.runSpeed = this.speeds[this.phase];
                 this.isAbsorb = false;
+                this.effects[2].active = false;
                 //director.pause();
                 this.gameManager.isPause = true;
                 //this.animator.crossFade("run");
@@ -239,16 +289,19 @@ export class PlayerControl extends Component {
             }
             else {
                 this.isInvisibleR = false;
+                this.effects[1].active = false;
             }
         }
         else if (instance.getComponent(ItemS)?.isHW) {
             this.isInvisibleH = true;
             this.t1 = 10;
+            this.effects[0].active = true;
             this.gameManager.HWPoolRestore(instance);
         }
         else if (instance.getComponent(ItemS)?.isRB) {
             this.isInvisibleR = true;
             this.t2 = 10;
+            this.effects[1].active = true;
             this.gameManager.RBPoolRestore(instance);
         }
         else if (instance.getComponent(ItemS)?.isCN) {
@@ -259,6 +312,7 @@ export class PlayerControl extends Component {
         else if (instance.getComponent(ItemS)?.isVM) {
             this.isAbsorb = true;
             this.t4 = 10;
+            this.effects[2].active = true;
             this.gameManager.VMPoolRestore(instance);
         }
     }
@@ -305,12 +359,14 @@ export class PlayerControl extends Component {
                 this.t1 -= deltaTime;
                 if (this.t1 <= 0) {
                     this.isInvisibleH = false;
+                    this.effects[0].active = false;
                 }
             }
             if (this.isInvisibleR) {
                 this.t2 -= deltaTime;
                 if (this.t2 <= 0) {
                     this.isInvisibleR = false;
+                    this.effects[1].active = false;
                 }
             }
             if (this.isAccelerate) {
@@ -325,6 +381,7 @@ export class PlayerControl extends Component {
                 this.t4 -= deltaTime;
                 if (this.t4 <= 0) {
                     this.isAbsorb = false;
+                    this.effects[2].active = false;
                 }
                 for (let i = 0; i < this.coins.children.length; i++) {
                     if (this.coins.children[i].position.z < this.node.position.z + 10) {
